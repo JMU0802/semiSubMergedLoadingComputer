@@ -1,0 +1,154 @@
+{
+  "id": "LC12",
+  "name": "LC12: Non-Buoyant Cargo, arrival",
+  "tanks": {
+    "Crew": {
+      "weight": 6.0
+    },
+    "FW1": {
+      "weight": 21.9
+    },
+    "FW2": {
+      "weight": 21.9
+    },
+    "FW3": {
+      "weight": 15.7
+    },
+    "HFO1": {
+      "weight": 126.2
+    },
+    "HFO2": {
+      "weight": 151.5
+    },
+    "HFO3": {
+      "weight": 99.2
+    },
+    "HFO4": {
+      "weight": 99.2
+    },
+    "MGO": {
+      "weight": 22.9
+    },
+    "Miscellaneous": {
+      "weight": 87.0
+    },
+    "Stores": {
+      "weight": 10.0
+    },
+    "T09.03": {
+      "weight": 27.8
+    },
+    "T09.04": {
+      "weight": 22.0
+    },
+    "T09.05": {
+      "weight": 18.5
+    },
+    "T09.06": {
+      "weight": 14.7
+    },
+    "T09.07": {
+      "weight": 3.7
+    },
+    "T09.08": {
+      "weight": 3.7
+    },
+    "T09.09": {
+      "weight": 7.0
+    },
+    "T09.10": {
+      "weight": 4.0
+    },
+    "T09.11": {
+      "weight": 18.5
+    },
+    "T09.13": {
+      "weight": 30.9
+    },
+    "T09.18": {
+      "weight": 5.6
+    },
+    "T09.19": {
+      "weight": 5.6
+    },
+    "T09.20": {
+      "weight": 10.4
+    },
+    "T09.21": {
+      "weight": 71.0
+    },
+    "T09.22": {
+      "weight": 30.5
+    },
+    "T10.01": {
+      "weight": 7.6
+    },
+    "WB02.01": {
+      "weight": 321.1
+    },
+    "WB03.01": {
+      "weight": 482.3
+    },
+    "WB03.02": {
+      "weight": 489.9
+    },
+    "WB03.07": {
+      "weight": 1995.0
+    },
+    "WB03.08": {
+      "weight": 1995.0
+    },
+    "WB04.01": {
+      "weight": 1308.9
+    },
+    "WB04.02": {
+      "weight": 1308.9
+    },
+    "WB05.01": {
+      "weight": 1320.3
+    },
+    "WB05.02": {
+      "weight": 1320.3
+    },
+    "WB06.01": {
+      "weight": 1320.3
+    },
+    "WB06.02": {
+      "weight": 1320.3
+    },
+    "WB07.01": {
+      "weight": 1555.7
+    },
+    "WB07.02": {
+      "weight": 1555.7
+    },
+    "WB08.01": {
+      "weight": 854.0
+    },
+    "WB09.01": {
+      "weight": 438.6
+    },
+    "WB09.07": {
+      "weight": 633.4
+    },
+    "WB09.08": {
+      "weight": 633.4
+    },
+    "WB10.01": {
+      "weight": 314.2
+    },
+    "WB11.01": {
+      "weight": 810.1
+    }
+  },
+  "cargo": [
+    {
+      "description": "NON-BUOYANT CARGO",
+      "weight": 20000.0,
+      "lcg": 105.4,
+      "tcg": 0.0,
+      "vcg": 36.0,
+      "fsm": 0.0
+    }
+  ]
+}

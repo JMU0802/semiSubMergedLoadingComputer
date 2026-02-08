@@ -1,0 +1,139 @@
+{
+  "id": "LC11",
+  "name": "LC11: Non-Buoyant Cargo, departure",
+  "tanks": {
+    "Crew": {
+      "weight": 6.0
+    },
+    "FW1": {
+      "weight": 80.0
+    },
+    "FW2": {
+      "weight": 80.0
+    },
+    "FW3": {
+      "weight": 70.0
+    },
+    "HFO1": {
+      "weight": 1031.0
+    },
+    "HFO2": {
+      "weight": 1237.2
+    },
+    "HFO3": {
+      "weight": 574.3
+    },
+    "HFO4": {
+      "weight": 574.4
+    },
+    "MGO": {
+      "weight": 20.1
+    },
+    "Miscellaneous": {
+      "weight": 87.0
+    },
+    "Stores": {
+      "weight": 100.0
+    },
+    "T09.03": {
+      "weight": 27.8
+    },
+    "T09.04": {
+      "weight": 22.0
+    },
+    "T09.05": {
+      "weight": 18.5
+    },
+    "T09.06": {
+      "weight": 14.7
+    },
+    "T09.07": {
+      "weight": 24.4
+    },
+    "T09.08": {
+      "weight": 24.4
+    },
+    "T09.09": {
+      "weight": 7.0
+    },
+    "T09.10": {
+      "weight": 20.0
+    },
+    "T09.18": {
+      "weight": 5.6
+    },
+    "T09.19": {
+      "weight": 5.6
+    },
+    "T10.01": {
+      "weight": 70.0
+    },
+    "WB02.01": {
+      "weight": 321.1
+    },
+    "WB03.01": {
+      "weight": 482.3
+    },
+    "WB03.02": {
+      "weight": 489.9
+    },
+    "WB03.07": {
+      "weight": 1060.7
+    },
+    "WB03.08": {
+      "weight": 982.0
+    },
+    "WB04.01": {
+      "weight": 1308.9
+    },
+    "WB04.02": {
+      "weight": 1308.9
+    },
+    "WB05.01": {
+      "weight": 1320.3
+    },
+    "WB05.02": {
+      "weight": 1320.3
+    },
+    "WB06.01": {
+      "weight": 1320.3
+    },
+    "WB06.02": {
+      "weight": 1320.3
+    },
+    "WB07.01": {
+      "weight": 1555.7
+    },
+    "WB07.02": {
+      "weight": 1555.7
+    },
+    "WB08.01": {
+      "weight": 854.0
+    },
+    "WB09.01": {
+      "weight": 438.6
+    },
+    "WB09.07": {
+      "weight": 633.4
+    },
+    "WB09.08": {
+      "weight": 633.4
+    },
+    "WB10.01": {
+      "weight": 314.2
+    },
+    "WB11.01": {
+      "weight": 500.0
+    }
+  },
+  "cargo": [
+    {
+      "description": "NON-BUOYANT CARGO",
+      "weight": 20000.0,
+      "lcg": 105.4,
+      "tcg": 0.0,
+      "vcg": 36.0,
+      "fsm": 0.0
+    }
+  ]
+}

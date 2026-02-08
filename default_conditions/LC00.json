@@ -1,0 +1,10 @@
+{
+  "id": "LC00",
+  "name": "LC00: Lightship, NOT A SAILING CONDITION",
+  "tanks": {
+    "WB02.01": {
+      "weight": 321.1
+    }
+  },
+  "cargo": []
+}

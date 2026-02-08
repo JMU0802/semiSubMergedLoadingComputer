@@ -1,0 +1,3543 @@
+
+      LOADING CONDITION LC00: Lightship, NOT A SAILING CONDITION
+      FLOATING POSITION
+      Mean draught (moulded)      3.39 m    KM above the moulded base  44.58 m
+      Draught at AP (moulded)     3.45 m    KG above the moulded base  10.34 m
+      Draught at FP (moulded)     3.34 m    GM0 (solid)                34.24 m
+      Trim (by stern)            -0.11 m    Free surface correction     0.00 m
+      Heeling                    -0.0  deg
+                                            GM  (fluid)                34.24 m
+      Mean draught (heel 0)       3.39 m
+      Trim (heel 0)              -0.11 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      _                                                                _
+      Deadweight                    321.1   14.73   0.00   3.55      0.0 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   21192.5  111.94  -0.01  10.34      0.0 
+                                                              _
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+      _                                                                              _
+      Deadweight                         321.1            14.73   0.00   3.55      0.0 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        21192.5           111.94  -0.01  10.34      0.0 
+      _                                                                              _
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.057   3.002 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   1.461 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   8.683 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  28.077 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150  34.241 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   1.433       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  87.315 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400  25.719       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  89.308 deg   OK 
+      ---------------------------------------------------------------------------------
+
+
+      Deltamarin Ltd                      Loading Condition                  DATE 2011-06-30
+      NAPA/D/LD/091014                          LC00                         TIME 14.46
+      P6047/O                                                                USER MVA
+      P6047                                                                  Page        4 
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_1      UNPROTECTED              -   222.00   11.375   33.350   29.994
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   29.995
+      AIR_DUCT_2      UNPROTECTED          -89.3   222.00  -11.375   33.350   29.988
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+Page 83 of 503
+
+
+      Deltamarin Ltd                      Loading Condition                  DATE 2011-06-30
+      NAPA/D/LD/091014                          LC00                         TIME 14.46
+      P6047/O                                                                USER MVA
+      P6047                                                                  Page        5 
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -2980.7 t         position:   158.4 m   198
+      Shear force (max)          2935.4 t                      47.2 m    59
+      Max. rel. shear force        50.0 %                     166.4 m   208
+      Sagging moment               -0.8 tm                    215.2 m   269
+      Hogging moment           175487.9 tm                    102.6 m   128
+      Max. rel. bending moment     81.6 %                     102.6 m   128
+
+
+      Deltamarin Ltd                      Loading Condition                  DATE 2011-06-30
+      NAPA/D/LD/091014                          LC00                         TIME 14.46
+      P6047/O                                                                USER MVA
+      P6047                                                                  Page        6 
+      LOADING CONDITION LC00, Lightship, NOT A SAILING CONDITION 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    13655   -13513    30261    24.1
+              42.00    33.60    48413   -50240    70924    62.8
+              57.00    45.60    81676   -94804   111952    70.7
+              72.00    57.60   115225  -139384   160929    69.6
+              87.00    69.60   142447  -183412   211763    64.9
+             102.00    81.60   161329  -183412   211763    74.5
+             117.00    93.60   172627  -183412   211763    80.2
+             132.00   105.60   175386  -183412   211763    81.6
+             147.00   117.60   170548  -183412   211763    79.1
+             162.00   129.60   157243  -183412   211763    72.4
+             180.00   144.00   131175  -183412   211763    59.2
+             198.00   158.40    93217  -164872   190357    45.3
+             210.00   168.00    64914  -129204   149176    39.5
+             222.00   177.60    38898   -93541   108000    31.4
+             237.00   189.60    14802   -48977    56548    20.9
+             249.00   199.20     4055   -22505    25984     9.5
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80     1534    -4679     4679    32.8
+              42.00    33.60     2576    -6075     6075    42.4
+              57.00    45.60     2914    -6418     6418    45.4
+              72.00    57.60     2579    -6718     6718    38.4
+              87.00    69.60     1908    -7000     7000    27.3
+             102.00    81.60     1259    -7000     7000    18.0
+             117.00    93.60      585    -7000     7000     8.4
+             132.00   105.60      -87    -7000     7000     1.2
+             147.00   117.60     -757    -7000     7000    10.8
+             162.00   129.60    -1425    -7000     7000    20.4
+             180.00   144.00    -2233    -6724     6724    33.2
+             198.00   158.40    -2981    -6269     6269    47.5
+             210.00   168.00    -2904    -5824     5824    49.9
+             222.00   177.60    -2506    -5380     5380    46.6
+             237.00   189.60    -1469    -4339     4339    33.9
+             249.00   199.20     -752    -3024     3024    24.9
+          -----------------------------------------------------
+
+
+
+4.3 LC01 Light ballast departure 
+
+Page 86 of 503
+
+
+      Deltamarin Ltd                      Loading Condition                  DATE 2011-06-30
+      NAPA/D/LD/091014                          LC01                         TIME 14.46
+      P6047/O                                                                USER MVA
+      P6047                                                                  Page        1 
+
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC01: Light ballast, departure
+      FLOATING POSITION
+      Mean draught (moulded)      7.00 m    KM above the moulded base  26.10 m
+      Draught at AP (moulded)     7.00 m    KG above the moulded base   6.66 m
+      Draught at FP (moulded)     7.00 m    GM0 (solid)                19.44 m
+      Trim                        0.00 m    Free surface correction    -0.26 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                19.18 m
+      Mean draught (heel 0)       7.00 m
+      Trim (heel 0)               0.00 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil               3500.0   71.26  -0.31   6.16   1683.1 
+      Diesel Oil                     80.0  152.31   1.43   3.22    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                20.0  179.80  -9.33   6.25     10.1 
+      Fresh Water                   300.0  195.55   0.00  18.24    343.4 
+      Ballast Water               22223.9  111.74   0.05   2.98  10050.8 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Stores                        100.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  26645.1  106.95   0.00   3.69  12370.2 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   47516.5  109.80  -0.00   6.66  12370.2 
+      _                                                                _
+
+
+
+      Deltamarin Ltd                      Loading Condition                  DATE 2011-06-30
+      NAPA/D/LD/091014                          LC01                         TIME 14.46
+      P6047/O                                                                USER MVA
+      P6047                                                                  Page        2 
+
+      LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1    1031.0     98.0   63.60   5.51   6.61      0.0 
+      HFO2        HFO Storage Tank 2    1237.2     98.0   64.80  -5.51   6.61      0.0 
+      HFO3        HFO Storage Tank 3     574.3     69.5   76.72   5.32   5.47    834.7 
+      HFO4        HFO Storage Tank 4     574.4     69.5   76.72  -5.32   5.47    834.7 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil           3500.0            71.26  -0.31   6.16   1683.1 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        20.1     10.5   70.80   5.69   3.02    259.6 
+      T09.07      MDO Storage P           24.4     78.6  179.30   9.58   3.38      6.4 
+      T09.08      MDO Storage S           24.4     78.6  179.30  -9.58   3.38      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 80.0           152.31   1.43   3.22    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water              20.0     49.8  179.80  -9.33   6.25     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           80.0     36.5  194.80   4.81  17.46     60.2 
+      FW2         Fresh Water S           80.0     36.5  194.80  -4.81  17.46     60.2 
+      FW3         Fresh Water C           70.0     44.7  196.40   0.00  20.64    156.9 
+      T10.01      Potable Water           70.0     92.6  196.40   0.00  17.61     66.2 
+      Total of Fresh Water               300.0           195.55   0.00  18.24    343.4 
+      Ballast Water density=1.025 t/m3 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB04.07     Water Ballast 04.07    376.3     18.8   69.60  16.44   3.37   2085.3 
+      WB04.08     Water Ballast 04.08    376.3     18.8   69.60 -16.44   3.37   2085.3 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB05.07     Water Ballast 05.07   1550.0     77.4   93.60  16.44   5.78   2085.3 
+      WB05.08     Water Ballast 05.08   1478.5     73.9   93.60 -16.44   5.63   2085.3 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB06.07     Water Ballast 06.07   2001.6    100.0  117.60  16.44   6.70      0.0 
+      WB06.08     Water Ballast 06.08   2001.6    100.0  117.60 -16.44   6.70      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB08.03     Water Ballast 08.03    189.6    100.0  165.55  14.11   1.49      0.0 
+      WB08.04     Water Ballast 08.04    189.6    100.0  165.55 -14.11   1.49      0.0 
+      WB09.01     Water Ballast 09.01    438.6    100.0  182.90  -0.00   1.12      0.0 
+      WB10.01     Water Ballast 10.01    314.2    100.0  194.02   0.00   1.44      0.0 
+      WB11.01     Water Ballast 11.01    471.0     28.7  205.72  -0.00   3.04   1709.6 
+      Total of Ballast Water           22223.9           111.74   0.05   2.98  10050.8 
+
+
+
+     Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+      Stores 
+      (STO)                              100.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       26645.1           106.95   0.00   3.69  12370.2 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        47516.5           109.80  -0.00   6.66  12370.2 
+      _                                                                              _
+
+                                                               Page        4 
+
+00 10 20 30 40 50 60 70 80
+heeling angle    degree
+
+HPHI
+
+0
+
+2
+
+4
+
+6
+
+8
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.055   2.414 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   1.292 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   7.431 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  32.853 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150  19.178 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   3.667       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  80.000 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400  66.563       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  71.636 deg   OK 
+      ---------------------------------------------------------------------------------
+
+
+
+      Deltamarin Ltd                      Loading Condition                  DATE 2011-06-30
+      NAPA/D/LD/091014                          LC01                         TIME 14.46
+      P6047/O                                                                USER MVA
+      P6047                                                                  Page        5 
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   26.350
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   26.350
+      AIR_DUCT_1      UNPROTECTED           71.6   222.00   11.375   33.350   26.350
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -1908.6 t         position:   177.6 m   222
+      Shear force (max)          1997.2 t                     129.6 m   162
+      Max. rel. shear force        35.7 %                     178.4 m   223
+      Sagging moment               -6.7 tm                    214.4 m   268
+      Hogging moment            70668.2 tm                    148.9 m   186
+      Max. rel. bending moment     43.8 %                      27.5 m    34
+
+     LOADING CONDITION LC01, Light ballast, departure 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    12574   -13513    30261    19.2
+              42.00    33.60    35530   -50240    70924    41.6
+              57.00    45.60    41111   -94804   111952    31.5
+              72.00    57.60    30773  -139384   160929    13.3
+              87.00    69.60    17774  -183412   211763     1.8
+             102.00    81.60    14448  -183412   211763     0.1
+             117.00    93.60    16321  -183412   211763     1.1
+             132.00   105.60    20895  -183412   211763     3.4
+             147.00   117.60    31857  -183412   211763     8.9
+             162.00   129.60    51331  -183412   211763    18.8
+             180.00   144.00    69516  -183412   211763    28.0
+             198.00   158.40    65452  -164872   190357    29.7
+             210.00   168.00    52653  -129204   149176    30.7
+             222.00   177.60    35700   -93541   108000    28.3
+             237.00   189.60    15345   -48977    56548    21.9
+             249.00   199.20     4143   -22505    25984     9.9
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80     1373    -4679     4679    29.3
+              42.00    33.60      972    -6075     6075    16.0
+              57.00    45.60     -112    -6418     6418     1.7
+              72.00    57.60    -1692    -6718     6718    25.2
+              87.00    69.60     -517    -7000     7000     7.4
+             102.00    81.60        0    -7000     7000     0.0
+             117.00    93.60      268    -7000     7000     3.8
+             132.00   105.60      514    -7000     7000     7.3
+             147.00   117.60     1268    -7000     7000    18.1
+             162.00   129.60     1997    -7000     7000    28.5
+             180.00   144.00      488    -6724     6724     7.3
+             198.00   158.40    -1038    -6269     6269    16.6
+             210.00   168.00    -1636    -5824     5824    28.1
+             222.00   177.60    -1909    -5380     5380    35.5
+             237.00   189.60    -1451    -4339     4339    33.4
+             249.00   199.20     -776    -3024     3024    25.7
+          -----------------------------------------------------
+
+
+4.4 LC02 Light Ballast, arrival 
+
+                                                      Page        1 
+
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC02: Light Ballast, arrival
+      FLOATING POSITION
+      Mean draught (moulded)      7.00 m    KM above the moulded base  26.12 m
+      Draught at AP (moulded)     7.00 m    KG above the moulded base   6.58 m
+      Draught at FP (moulded)     7.00 m    GM0 (solid)                19.54 m
+      Trim                        0.00 m    Free surface correction    -0.34 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                19.20 m
+      Mean draught (heel 0)       7.00 m
+      Trim (heel 0)               0.00 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil                559.2   86.85  -0.17   3.17   5105.4 
+      Diesel Oil                     41.5  119.85   3.14   2.87    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                 4.0  179.80  -9.33   5.65     10.1 
+      Fresh Water                    67.1  195.35   0.00  17.43    343.4 
+      Ballast Water               25385.9  107.48  -0.02   3.50  10484.2 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Gray Water                     49.4  180.00   5.25   7.00      0.0 
+      Bilge Water                    40.9  187.40  -2.57   2.31      0.0 
+      Sludge                         71.0  187.03   3.22   1.73      0.0 
+      Stores                         10.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  26650.1  106.95   0.00   3.55  16226.0 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   47521.5  109.80  -0.00   6.58  16226.0 
+      _                                                                _
+
+
+      Deltamarin Ltd                    Loading Condition                DATE 2011-06-30
+      NAPA/D/LD/091014                        LC02                       TIME 14.44
+      P6047/O                                                            USER MVA
+      P6047                                                              Page        2 
+
+      LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1     126.2     12.0   63.60   5.69   3.08   1429.4 
+      HFO2        HFO Storage Tank 2     151.5     12.0   64.80  -5.69   3.08   1715.3 
+      HFO3        HFO Storage Tank 3      99.2     12.0   76.61   5.36   3.10    973.6 
+      HFO4        HFO Storage Tank 4      99.2     12.0   76.61  -5.36   3.10    973.6 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil            559.2            86.85  -0.17   3.17   5105.4 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        22.9     12.0   70.80   5.69   3.08    259.6 
+      T09.07      MDO Storage P            3.7     12.0  179.29   9.58   2.21      6.4 
+      T09.08      MDO Storage S            3.7     12.0  179.29  -9.58   2.21      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 41.5           119.85   3.14   2.87    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water               4.0     10.0  179.80  -9.33   5.65     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           21.9     10.0  194.80   4.81  16.69     60.2 
+      FW2         Fresh Water S           21.9     10.0  194.80  -4.81  16.69     60.2 
+      FW3         Fresh Water C           15.7     10.0  196.40   0.00  19.93    156.9 
+      T10.01      Potable Water            7.6     10.0  196.40   0.00  16.53     66.2 
+      Total of Fresh Water                67.1           195.35   0.00  17.43    343.4 
+
+
+                                              
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Ballast Water density=1.025 t/m3 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB04.07     Water Ballast 04.07   1865.1     93.2   69.60  16.44   6.42   2085.3 
+      WB04.08     Water Ballast 04.08   1887.5     94.3   69.60 -16.44   6.47   2085.3 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB05.07     Water Ballast 05.07   1501.2     75.0   93.60  16.44   5.67   2085.3 
+      WB05.08     Water Ballast 05.08   1501.2     75.0   93.60 -16.44   5.67   2085.3 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB06.07     Water Ballast 06.07   2001.6    100.0  117.60  16.44   6.70      0.0 
+      WB06.08     Water Ballast 06.08   2001.6    100.0  117.60 -16.44   6.70      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB08.03     Water Ballast 08.03    189.6    100.0  165.55  14.11   1.49      0.0 
+      WB08.04     Water Ballast 08.04    189.6    100.0  165.55 -14.11   1.49      0.0 
+      WB09.01     Water Ballast 09.01    438.6    100.0  182.90  -0.00   1.12      0.0 
+      WB10.01     Water Ballast 10.01    314.2    100.0  194.02   0.00   1.44      0.0 
+      WB11.01     Water Ballast 11.01    659.1     40.2  205.78   0.00   3.92   2143.1 
+      Total of Ballast Water           25385.9           107.48  -0.02   3.50  10484.2 
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+      Gray Water density=1.000 t/m3 
+      T09.11      Black Water             18.5    100.0  180.00   4.16   7.00      0.0 
+      T09.13      Gray Water              30.9    100.0  180.00   5.91   7.00      0.0 
+      Total of Gray Water                 49.4           180.00   5.25   7.00      0.0 
+      Bilge Water density=1.000 t/m3 
+      T09.20      Bilge Water Settling    10.4    100.0  188.38  -0.73   3.97      0.0 
+      T09.22      Bilge Water             30.5    100.0  187.07  -3.20   1.74      0.0 
+      Total of Bilge Water                40.9           187.40  -2.57   2.31      0.0 
+      Sludge density=2.380 t/m3 
+      T09.21      Sludge                  71.0     98.0  187.03   3.22   1.73      0.0 
+      Stores 
+      (STO)                               10.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       26650.1           106.95   0.00   3.55  16226.0 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        47521.5           109.80  -0.00   6.58  16226.0 
+      _                                                                              _
+
+
+00 10 20 30 40 50 60 70 80
+heeling angle    degree
+
+HPHI
+
+0
+
+2
+
+4
+
+6
+
+8
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.055   2.422 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   1.302 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   7.485 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  33.342 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150  19.197 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   3.718       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  80.000 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400  67.223       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  71.632 deg   OK 
+      ---------------------------------------------------------------------------------
+
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   26.350
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   26.350
+      AIR_DUCT_1      UNPROTECTED           71.6   222.00   11.375   33.350   26.350
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -1879.4 t         position:   178.4 m   223
+      Shear force (max)          2031.1 t                     129.6 m   162
+      Max. rel. shear force        35.3 %                     179.2 m   224
+      Sagging moment               -2.9 tm                    215.2 m   269
+      Hogging moment            69974.4 tm                    148.9 m   186
+      Max. rel. bending moment     43.8 %                      27.5 m    34
+
+
+
+      LOADING CONDITION LC02, Light Ballast, arrival 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    12558   -13513    30261    19.1
+              42.00    33.60    35494   -50240    70924    41.5
+              57.00    45.60    41057   -94804   111952    31.4
+              72.00    57.60    30697  -139384   160929    13.3
+              87.00    69.60    15817  -183412   211763     0.8
+             102.00    81.60    11214  -183412   211763     1.5
+             117.00    93.60    13723  -183412   211763     0.2
+             132.00   105.60    18776  -183412   211763     2.3
+             147.00   117.60    30136  -183412   211763     8.1
+             162.00   129.60    50006  -183412   211763    18.1
+             180.00   144.00    68662  -183412   211763    27.6
+             198.00   158.40    65067  -164872   190357    29.5
+             210.00   168.00    52578  -129204   149176    30.6
+             222.00   177.60    35935   -93541   108000    28.5
+             237.00   189.60    16129   -48977    56548    23.4
+             249.00   199.20     5169   -22505    25984    14.1
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80     1373    -4679     4679    29.3
+              42.00    33.60      972    -6075     6075    16.0
+              57.00    45.60     -113    -6418     6418     1.8
+              72.00    57.60    -1693    -6718     6718    25.2
+              87.00    69.60     -828    -7000     7000    11.8
+             102.00    81.60       59    -7000     7000     0.8
+             117.00    93.60      316    -7000     7000     4.5
+             132.00   105.60      548    -7000     7000     7.8
+             147.00   117.60     1302    -7000     7000    18.6
+             162.00   129.60     2031    -7000     7000    29.0
+             180.00   144.00      522    -6724     6724     7.8
+             198.00   158.40    -1004    -6269     6269    16.0
+             210.00   168.00    -1602    -5824     5824    27.5
+             222.00   177.60    -1875    -5380     5380    34.9
+             237.00   189.60    -1316    -4339     4339    30.3
+             249.00   199.20     -917    -3024     3024    30.3
+          -----------------------------------------------------
+
+Page 101 of 503
+
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+4.5 LC03 Heavy ballast / min. ice draught, departure 
+
+
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC03: Heavy ballast / min. ice draught, departure
+      FLOATING POSITION
+      Mean draught (moulded)      8.00 m    KM above the moulded base  24.23 m
+      Draught at AP (moulded)     8.00 m    KG above the moulded base   6.82 m
+      Draught at FP (moulded)     8.00 m    GM0 (solid)                17.40 m
+      Trim                        0.00 m    Free surface correction    -0.14 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                17.26 m
+      Mean draught (heel 0)       8.00 m
+      Trim (heel 0)               0.00 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil               3500.0   71.26  -0.31   6.16   1683.1 
+      Diesel Oil                     80.0  152.31   1.43   3.22    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                20.0  179.80  -9.33   6.25     10.1 
+      Fresh Water                   300.0  195.55   0.00  18.24    343.4 
+      Ballast Water               30102.5  109.85   0.04   4.25   5285.9 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Stores                        100.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  34523.6  106.40   0.00   4.64   7605.3 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   55395.0  109.05  -0.00   6.82   7605.3 
+      _                                                                _
+
+
+      LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1    1031.0     98.0   63.60   5.51   6.61      0.0 
+      HFO2        HFO Storage Tank 2    1237.2     98.0   64.80  -5.51   6.61      0.0 
+      HFO3        HFO Storage Tank 3     574.3     69.5   76.72   5.32   5.47    834.7 
+      HFO4        HFO Storage Tank 4     574.4     69.5   76.72  -5.32   5.47    834.7 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil           3500.0            71.26  -0.31   6.16   1683.1 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        20.1     10.5   70.80   5.69   3.02    259.6 
+      T09.07      MDO Storage P           24.4     78.6  179.30   9.58   3.38      6.4 
+      T09.08      MDO Storage S           24.4     78.6  179.30  -9.58   3.38      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 80.0           152.31   1.43   3.22    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water              20.0     49.8  179.80  -9.33   6.25     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           80.0     36.5  194.80   4.81  17.46     60.2 
+      FW2         Fresh Water S           80.0     36.5  194.80  -4.81  17.46     60.2 
+      FW3         Fresh Water C           70.0     44.7  196.40   0.00  20.64    156.9 
+      T10.01      Potable Water           70.0     92.6  196.40   0.00  17.61     66.2 
+      Total of Fresh Water               300.0           195.55   0.00  18.24    343.4 
+      Ballast Water density=1.025 t/m3 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB04.07     Water Ballast 04.07   1904.0     95.1   69.60  16.44   6.50   2085.3 
+      WB04.08     Water Ballast 04.08   1833.0     91.6   69.60 -16.44   6.35   2085.3 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB05.07     Water Ballast 05.07   2001.6    100.0   93.60  16.44   6.70      0.0 
+      WB05.08     Water Ballast 05.08   2001.6    100.0   93.60 -16.44   6.70      0.0 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB06.07     Water Ballast 06.07   2001.6    100.0  117.60  16.44   6.70      0.0 
+      WB06.08     Water Ballast 06.08   2001.6    100.0  117.60 -16.44   6.70      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB07.07     Water Ballast 07.07   2390.6    100.0  143.94  16.42   6.71      0.0 
+      WB07.08     Water Ballast 07.08   2390.6    100.0  143.94 -16.42   6.71      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB08.03     Water Ballast 08.03    189.6    100.0  165.55  14.11   1.49      0.0 
+      WB08.04     Water Ballast 08.04    189.6    100.0  165.55 -14.11   1.49      0.0 
+      WB11.01     Water Ballast 11.01    362.2     22.1  205.66   0.00   2.45   1115.3 
+      Total of Ballast Water           30102.5           109.85   0.04   4.25   5285.9 
+
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+      Stores 
+      (STO)                              100.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       34523.6           106.40   0.00   4.64   7605.3 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        55395.0           109.05  -0.00   6.82   7605.3 
+      _                                                                              _
+
+
+
+00 10 20 30 40 50 60 70
+
+70
+heeling angle    degree
+
+HPHI
+
+0
+
+2
+
+4
+
+6
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.055   2.109 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   1.135 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   6.522 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  35.710 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150  17.263 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   3.986       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  70.000 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400  71.011       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  67.463 deg   OK 
+      ---------------------------------------------------------------------------------
+
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   25.350
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   25.350
+      AIR_DUCT_1      UNPROTECTED           67.5   222.00   11.375   33.350   25.350
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -3588.7 t         position:    57.6 m    72
+      Shear force (max)          1358.8 t                     158.4 m   198
+      Max. rel. shear force        53.4 %                      57.6 m    72
+      Sagging moment           -49562.2 tm                     81.6 m   102
+      Hogging moment            26846.5 tm                     34.9 m    44
+      Max. rel. bending moment     39.6 %                       8.0 m    10
+
+
+      LOADING CONDITION LC03, Heavy ballast / min. ice draught, departure 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    11962   -13513    30261    16.4
+              42.00    33.60    26737   -50240    70924    27.1
+              57.00    45.60    19085   -94804   111952    10.2
+              72.00    57.60   -10834  -139384   160929    14.4
+              87.00    69.60   -40812  -183412   211763    27.8
+             102.00    81.60   -49562  -183412   211763    32.3
+             117.00    93.60   -47587  -183412   211763    31.3
+             132.00   105.60   -43412  -183412   211763    29.1
+             147.00   117.60   -36277  -183412   211763    25.5
+             162.00   129.60   -26982  -183412   211763    20.8
+             180.00   144.00   -12059  -183412   211763    13.3
+             198.00   158.40     5912  -164872   190357     3.8
+             210.00   168.00    14151  -129204   149176     3.0
+             222.00   177.60    14537   -93541   108000     7.3
+             237.00   189.60     8437   -48977    56548     8.8
+             249.00   199.20     2332   -22505    25984     2.4
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80     1212    -4679     4679    25.9
+              42.00    33.60      133    -6075     6075     2.2
+              57.00    45.60    -1479    -6418     6418    23.0
+              72.00    57.60    -3589    -6718     6718    53.4
+              87.00    69.60    -1451    -7000     7000    20.7
+             102.00    81.60       28    -7000     7000     0.4
+             117.00    93.60      256    -7000     7000     3.7
+             132.00   105.60      459    -7000     7000     6.6
+             147.00   117.60      684    -7000     7000     9.8
+             162.00   129.60      884    -7000     7000    12.6
+             180.00   144.00     1142    -6724     6724    17.0
+             198.00   158.40     1359    -6269     6269    21.7
+             210.00   168.00      356    -5824     5824     6.1
+             222.00   177.60     -281    -5380     5380     5.2
+             237.00   189.60     -635    -4339     4339    14.6
+             249.00   199.20     -492    -3024     3024    16.3
+          -----------------------------------------------------
+
+
+
+
+ 
+
+ 
+
+ 
+ 4.7.2011 
+ 
+
+ 
+
+ 
+4.6 LC04 Heavy ballast / min. ice draught, arrival 
+
+
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC04: Heavy ballast / min. ice draught, arrival
+      FLOATING POSITION
+      Mean draught (moulded)      8.00 m    KM above the moulded base  24.23 m
+      Draught at AP (moulded)     8.00 m    KG above the moulded base   6.64 m
+      Draught at FP (moulded)     8.00 m    GM0 (solid)                17.58 m
+      Trim                        0.00 m    Free surface correction    -0.22 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                17.36 m
+      Mean draught (heel 0)       8.00 m
+      Trim (heel 0)               0.00 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil                559.2   86.85  -0.17   3.17   5105.4 
+      Diesel Oil                     41.5  119.85   3.14   2.87    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                 4.0  179.80  -9.33   5.65     10.1 
+      Fresh Water                    67.1  195.35   0.00  17.43    343.4 
+      Ballast Water               33259.6  106.78  -0.01   4.34   6680.0 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Gray Water                     49.4  180.00   5.25   7.00      0.0 
+      Bilge Water                    40.9  187.40  -2.57   2.31      0.0 
+      Sludge                         71.0  187.03   3.22   1.73      0.0 
+      Stores                         10.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  34523.7  106.40   0.00   4.34  12421.7 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   55395.1  109.05  -0.00   6.64  12421.7 
+      _                                                                _
+
+
+      LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1     126.2     12.0   63.60   5.69   3.08   1429.4 
+      HFO2        HFO Storage Tank 2     151.5     12.0   64.80  -5.69   3.08   1715.3 
+      HFO3        HFO Storage Tank 3      99.2     12.0   76.61   5.36   3.10    973.6 
+      HFO4        HFO Storage Tank 4      99.2     12.0   76.61  -5.36   3.10    973.6 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil            559.2            86.85  -0.17   3.17   5105.4 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        22.9     12.0   70.80   5.69   3.08    259.6 
+      T09.07      MDO Storage P            3.7     12.0  179.29   9.58   2.21      6.4 
+      T09.08      MDO Storage S            3.7     12.0  179.29  -9.58   2.21      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 41.5           119.85   3.14   2.87    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water               4.0     10.0  179.80  -9.33   5.65     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           21.9     10.0  194.80   4.81  16.69     60.2 
+      FW2         Fresh Water S           21.9     10.0  194.80  -4.81  16.69     60.2 
+      FW3         Fresh Water C           15.7     10.0  196.40   0.00  19.93    156.9 
+      T10.01      Potable Water            7.6     10.0  196.40   0.00  16.53     66.2 
+      Total of Fresh Water                67.1           195.35   0.00  17.43    343.4 
+
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Ballast Water density=1.025 t/m3 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB03.07     Water Ballast 03.07   1152.1     54.1   47.25  15.84   4.17   2039.3 
+      WB03.08     Water Ballast 03.08   1175.0     55.2   47.22 -15.85   4.23   2044.9 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB04.07     Water Ballast 04.07   2001.6    100.0   69.60  16.44   6.70      0.0 
+      WB04.08     Water Ballast 04.08   2001.6    100.0   69.60 -16.44   6.70      0.0 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB05.07     Water Ballast 05.07   2001.6    100.0   93.60  16.44   6.70      0.0 
+      WB05.08     Water Ballast 05.08   2001.6    100.0   93.60 -16.44   6.70      0.0 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB06.07     Water Ballast 06.07   2001.6    100.0  117.60  16.44   6.70      0.0 
+      WB06.08     Water Ballast 06.08   2001.6    100.0  117.60 -16.44   6.70      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB07.07     Water Ballast 07.07   2390.6    100.0  143.94  16.42   6.71      0.0 
+      WB07.08     Water Ballast 07.08   2390.6    100.0  143.94 -16.42   6.71      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB08.03     Water Ballast 08.03    189.6    100.0  165.55  14.11   1.49      0.0 
+      WB08.04     Water Ballast 08.04    189.6    100.0  165.55 -14.11   1.49      0.0 
+      WB11.01     Water Ballast 11.01    926.0     56.5  205.82  -0.00   5.02   2595.7 
+      Total of Ballast Water           33259.6           106.78  -0.01   4.34   6680.0 
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+      Gray Water density=1.000 t/m3 
+      T09.11      Black Water             18.5    100.0  180.00   4.16   7.00      0.0 
+      T09.13      Gray Water              30.9    100.0  180.00   5.91   7.00      0.0 
+      Total of Gray Water                 49.4           180.00   5.25   7.00      0.0 
+      Bilge Water density=1.000 t/m3 
+      T09.20      Bilge Water Settling    10.4    100.0  188.38  -0.73   3.97      0.0 
+      T09.22      Bilge Water             30.5    100.0  187.07  -3.20   1.74      0.0 
+      Total of Bilge Water                40.9           187.40  -2.57   2.31      0.0 
+      Sludge density=2.380 t/m3 
+      T09.21      Sludge                  71.0     98.0  187.03   3.22   1.73      0.0 
+      Stores 
+      (STO)                               10.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       34523.7           106.40   0.00   4.34  12421.7 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        55395.1           109.05  -0.00   6.64  12421.7 
+      _                                                                              _
+                                                               Page        4 
+
+00 10 20 30 40 50 60 70
+
+70
+heeling angle    degree
+
+HPHI
+
+0
+
+2
+
+4
+
+6
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.055   2.120 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   1.144 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   6.572 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  36.016 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150  17.358 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   4.069       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  70.000 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400  71.657       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  67.467 deg   OK 
+      ---------------------------------------------------------------------------------
+
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   25.350
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   25.350
+      AIR_DUCT_1      UNPROTECTED           67.5   222.00   11.375   33.350   25.350
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -1262.7 t         position:    57.6 m    72
+      Shear force (max)          1218.9 t                      17.8 m    22
+      Max. rel. shear force        33.4 %                     199.1 m   249
+      Sagging moment            -8097.3 tm                     98.4 m   123
+      Hogging moment            28247.0 tm                    168.0 m   210
+      Max. rel. bending moment     39.8 %                       8.0 m    10
+
+
+      LOADING CONDITION LC04, Heavy ballast / min. ice draught, arrival 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    11932   -13513    30261    16.3
+              42.00    33.60    26678   -50240    70924    27.0
+              57.00    45.60    24003   -94804   111952    14.9
+              72.00    57.60    13176  -139384   160929     1.6
+              87.00    69.60     1032  -183412   211763     6.7
+             102.00    81.60    -5674  -183412   211763    10.0
+             117.00    93.60    -7856  -183412   211763    11.2
+             132.00   105.60    -7833  -183412   211763    11.1
+             147.00   117.60    -4843  -183412   211763     9.6
+             162.00   129.60      314  -183412   211763     7.0
+             180.00   144.00    10279  -183412   211763     2.0
+             198.00   158.40    23302  -164872   190357     5.9
+             210.00   168.00    28247  -129204   149176    13.1
+             222.00   177.60    25341   -93541   108000    18.0
+             237.00   189.60    15296   -48977    56548    21.8
+             249.00   199.20     5840   -22505    25984    16.9
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80     1212    -4679     4679    25.9
+              42.00    33.60      133    -6075     6075     2.2
+              57.00    45.60     -555    -6418     6418     8.6
+              72.00    57.60    -1263    -6718     6718    18.8
+              87.00    69.60     -801    -7000     7000    11.4
+             102.00    81.60     -317    -7000     7000     4.5
+             117.00    93.60      -88    -7000     7000     1.3
+             132.00   105.60      115    -7000     7000     1.6
+             147.00   117.60      341    -7000     7000     4.9
+             162.00   129.60      542    -7000     7000     7.7
+             180.00   144.00      800    -6724     6724    11.9
+             198.00   158.40     1017    -6269     6269    16.2
+             210.00   168.00       15    -5824     5824     0.3
+             222.00   177.60     -621    -5380     5380    11.6
+             237.00   189.60     -873    -4339     4339    20.1
+             249.00   199.20    -1007    -3024     3024    33.3
+          -----------------------------------------------------
+
+
+4.7 LC05 End of de-ballasting 
+
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC05: End of de-ballasting
+      FLOATING POSITION
+      Mean draught (moulded)      9.68 m    KM above the moulded base  22.11 m
+      Draught at AP (moulded)     9.38 m    KG above the moulded base   6.35 m
+      Draught at FP (moulded)     9.98 m    GM0 (solid)                15.76 m
+      Trim (by head)              0.60 m    Free surface correction    -0.60 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                15.16 m
+      Mean draught (heel 0)       9.68 m
+      Trim (heel 0)               0.60 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil                559.2   86.85  -0.17   3.17   5105.4 
+      Diesel Oil                     41.5  119.85   3.14   2.87    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                 4.0  179.80  -9.33   5.65     10.1 
+      Fresh Water                    67.1  195.35   0.00  17.43    343.4 
+      Ballast Water               46798.6  106.96  -0.00   4.57  35706.0 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Gray Water                     49.4  180.00   5.25   7.00      0.0 
+      Bilge Water                    40.9  187.40  -2.57   2.31      0.0 
+      Sludge                         71.0  187.03   3.22   1.73      0.0 
+      Stores                         10.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  48062.8  106.68   0.01   4.57  41447.8 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   68934.2  108.73   0.00   6.35  41447.8 
+      _                                                                _
+
+
+      LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1     126.2     12.0   63.60   5.69   3.08   1429.4 
+      HFO2        HFO Storage Tank 2     151.5     12.0   64.80  -5.69   3.08   1715.3 
+      HFO3        HFO Storage Tank 3      99.2     12.0   76.61   5.36   3.10    973.6 
+      HFO4        HFO Storage Tank 4      99.2     12.0   76.61  -5.36   3.10    973.6 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil            559.2            86.85  -0.17   3.17   5105.4 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        22.9     12.0   70.80   5.69   3.08    259.6 
+      T09.07      MDO Storage P            3.7     12.0  179.29   9.58   2.21      6.4 
+      T09.08      MDO Storage S            3.7     12.0  179.29  -9.58   2.21      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 41.5           119.85   3.14   2.87    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water               4.0     10.0  179.80  -9.33   5.65     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           21.9     10.0  194.80   4.81  16.69     60.2 
+      FW2         Fresh Water S           21.9     10.0  194.80  -4.81  16.69     60.2 
+      FW3         Fresh Water C           15.7     10.0  196.40   0.00  19.93    156.9 
+      T10.01      Potable Water            7.6     10.0  196.40   0.00  16.53     66.2 
+      Total of Fresh Water                67.1           195.35   0.00  17.43    343.4 
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Ballast Water density=1.025 t/m3 
+      WB02.05     Water Ballast 02.05    914.9     60.0   24.80   5.42   6.51   2551.5 
+      WB02.06     Water Ballast 02.06    916.0     60.0   24.81  -5.43   6.51   2608.3 
+      WB02.07     Water Ballast 02.07    571.3     60.0   25.82  15.38   7.31   1545.6 
+      WB02.08     Water Ballast 02.08    571.3     60.0   25.82 -15.38   7.31   1545.6 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB03.06     Water Ballast 03.06     85.5      8.9   40.60   0.00   2.90    945.3 
+      WB03.07     Water Ballast 03.07   1487.8     69.9   46.89  15.97   4.92   2083.5 
+      WB03.08     Water Ballast 03.08   1487.8     69.9   46.89 -15.97   4.92   2083.5 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB04.07     Water Ballast 04.07   2001.6    100.0   69.60  16.44   6.70      0.0 
+      WB04.08     Water Ballast 04.08   2001.6    100.0   69.60 -16.44   6.70      0.0 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB05.05     Water Ballast 05.05   1079.4     50.0   93.47   5.48   4.62   2209.8 
+      WB05.06     Water Ballast 05.06   1079.4     50.0   93.47  -5.48   4.62   2209.8 
+      WB05.07     Water Ballast 05.07   2001.6    100.0   93.60  16.44   6.70      0.0 
+      WB05.08     Water Ballast 05.08   2001.6    100.0   93.60 -16.44   6.70      0.0 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB06.05     Water Ballast 06.05   1079.4     50.0  117.47   5.48   4.62   2209.8 
+      WB06.06     Water Ballast 06.06   1079.4     50.0  117.47  -5.48   4.62   2209.8 
+      WB06.07     Water Ballast 06.07   2001.6    100.0  117.60  16.44   6.70      0.0 
+      WB06.08     Water Ballast 06.08   2001.6    100.0  117.60 -16.44   6.70      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB07.05     Water Ballast 07.05   1299.9     50.0  143.85   5.49   4.62   2638.2 
+      WB07.06     Water Ballast 07.06   1299.9     50.0  143.85  -5.49   4.62   2638.2 
+      WB07.07     Water Ballast 07.07   2390.6    100.0  143.94  16.42   6.71      0.0 
+      WB07.08     Water Ballast 07.08   2390.6    100.0  143.94 -16.42   6.71      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB08.03     Water Ballast 08.03    189.6    100.0  165.55  14.11   1.49      0.0 
+      WB08.04     Water Ballast 08.04    189.6    100.0  165.55 -14.11   1.49      0.0 
+      WB08.07     Water Ballast 08.07    599.8     50.0  166.93  15.10   5.05    947.5 
+      WB08.08     Water Ballast 08.08    599.8     50.0  166.93 -15.10   5.05    947.5 
+      WB09.01     Water Ballast 09.01    438.6    100.0  182.90  -0.00   1.12      0.0 
+      WB09.07     Water Ballast 09.07    411.7     65.0  183.50  11.89   6.42    152.4 
+      WB09.08     Water Ballast 09.08    411.7     65.0  183.50 -11.89   6.42    152.4 
+      WB10.01     Water Ballast 10.01    157.1     50.0  193.98   0.00   0.81   2028.3 
+      WB10.05     Water Ballast 10.05    261.5     25.0  194.09   4.65   4.14    888.3 
+      WB10.06     Water Ballast 10.06    261.5     25.0  194.09  -4.65   4.14    888.3 
+      WB11.01     Water Ballast 11.01    698.5     42.6  205.78   0.00   4.09   2222.0 
+      Total of Ballast Water           46798.6           106.96  -0.00   4.57  35706.0 
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+      Gray Water density=1.000 t/m3 
+      T09.11      Black Water             18.5    100.0  180.00   4.16   7.00      0.0 
+      T09.13      Gray Water              30.9    100.0  180.00   5.91   7.00      0.0 
+      Total of Gray Water                 49.4           180.00   5.25   7.00      0.0 
+      Bilge Water density=1.000 t/m3 
+      T09.20      Bilge Water Settling    10.4    100.0  188.38  -0.73   3.97      0.0 
+      T09.22      Bilge Water             30.5    100.0  187.07  -3.20   1.74      0.0 
+      Total of Bilge Water                40.9           187.40  -2.57   2.31      0.0 
+
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Sludge density=2.380 t/m3 
+      T09.21      Sludge                  71.0     98.0  187.03   3.22   1.73      0.0 
+      Stores 
+      (STO)                               10.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       48062.8           106.68   0.01   4.57  41447.8 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        68934.2           108.73   0.00   6.35  41447.8 
+      _                                                                              _
+
+
+
+00 10 20 30 40 50 60 70
+
+70
+heeling angle    degree
+
+HPHI
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.055   1.599 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   0.854 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   5.106 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  44.739 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150  15.160 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   4.586       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  69.989 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400  72.386       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  60.627 deg   OK 
+      ---------------------------------------------------------------------------------
+
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   23.482
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   23.461
+      AIR_DUCT_1      UNPROTECTED           60.6   222.00   11.375   33.350   23.477
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -1392.3 t         position:    80.8 m   101
+      Shear force (max)          1576.3 t                      33.6 m    42
+      Max. rel. shear force        25.9 %                      33.6 m    42
+      Sagging moment            -6949.2 tm                    120.2 m   150
+      Hogging moment            45710.8 tm                     51.2 m    64
+      Max. rel. bending moment     42.3 %                       8.0 m    10
+
+      LOADING CONDITION LC05, End of de-ballasting 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    10266   -13513    30261     8.6
+              42.00    33.60    32073   -50240    70924    35.9
+              57.00    45.60    44335   -94804   111952    34.6
+              72.00    57.60    43430  -139384   160929    21.7
+              87.00    69.60    33449  -183412   211763     9.8
+             102.00    81.60    18966  -183412   211763     2.4
+             117.00    93.60     5382  -183412   211763     4.5
+             132.00   105.60    -3321  -183412   211763     8.9
+             147.00   117.60    -6799  -183412   211763    10.6
+             162.00   129.60    -5865  -183412   211763    10.1
+             180.00   144.00     1460  -183412   211763     6.4
+             198.00   158.40    14464  -164872   190357     1.0
+             210.00   168.00    19806  -129204   149176     7.1
+             222.00   177.60    16177   -93541   108000     8.9
+             237.00   189.60     7193   -48977    56548     6.5
+             249.00   199.20     2199   -22505    25984     1.9
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80     1040    -4679     4679    22.2
+              42.00    33.60     1576    -6075     6075    25.9
+              57.00    45.60      509    -6418     6418     7.9
+              72.00    57.60     -672    -6718     6718    10.0
+              87.00    69.60    -1030    -7000     7000    14.7
+             102.00    81.60    -1383    -7000     7000    19.8
+             117.00    93.60     -921    -7000     7000    13.2
+             132.00   105.60     -522    -7000     7000     7.5
+             147.00   117.60      -98    -7000     7000     1.4
+             162.00   129.60      261    -7000     7000     3.7
+             180.00   144.00      714    -6724     6724    10.6
+             198.00   158.40     1081    -6269     6269    17.2
+             210.00   168.00       27    -5824     5824     0.5
+             222.00   177.60     -810    -5380     5380    15.1
+             237.00   189.60     -538    -4339     4339    12.4
+             249.00   199.20     -428    -3024     3024    14.2
+          -----------------------------------------------------
+
+
+ 
+
+ 
+
+4.8 LC11 Non-Buoyant Cargo, departure 
+
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC11: Non-Buoyant Cargo, departure
+      FLOATING POSITION
+      Mean draught (moulded)      8.90 m    KM above the moulded base  22.99 m
+      Draught at AP (moulded)     8.90 m    KG above the moulded base  16.07 m
+      Draught at FP (moulded)     8.90 m    GM0 (solid)                 6.92 m
+      Trim                        0.00 m    Free surface correction    -0.13 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                 6.79 m
+      Mean draught (heel 0)       8.90 m
+      Trim (heel 0)               0.00 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil               3500.0   71.26  -0.31   6.16   1683.1 
+      Diesel Oil                     80.0  152.31   1.43   3.22    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                20.0  179.80  -9.33   6.25     10.1 
+      Fresh Water                   300.0  195.55   0.00  18.24    343.4 
+      Ballast Water               17398.9  112.02   0.07   2.15   5766.9 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Solid cargo                 20000.0  105.40   0.00  36.00      0.0 
+      Stores                        100.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  41820.0  105.77   0.00  18.88   8086.3 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   62691.4  108.33  -0.00  16.07   8086.3 
+      _                                                                _
+
+
+      LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1    1031.0     98.0   63.60   5.51   6.61      0.0 
+      HFO2        HFO Storage Tank 2    1237.2     98.0   64.80  -5.51   6.61      0.0 
+      HFO3        HFO Storage Tank 3     574.3     69.5   76.72   5.32   5.47    834.7 
+      HFO4        HFO Storage Tank 4     574.4     69.5   76.72  -5.32   5.47    834.7 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil           3500.0            71.26  -0.31   6.16   1683.1 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        20.1     10.5   70.80   5.69   3.02    259.6 
+      T09.07      MDO Storage P           24.4     78.6  179.30   9.58   3.38      6.4 
+      T09.08      MDO Storage S           24.4     78.6  179.30  -9.58   3.38      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 80.0           152.31   1.43   3.22    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water              20.0     49.8  179.80  -9.33   6.25     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           80.0     36.5  194.80   4.81  17.46     60.2 
+      FW2         Fresh Water S           80.0     36.5  194.80  -4.81  17.46     60.2 
+      FW3         Fresh Water C           70.0     44.7  196.40   0.00  20.64    156.9 
+      T10.01      Potable Water           70.0     92.6  196.40   0.00  17.61     66.2 
+      Total of Fresh Water               300.0           195.55   0.00  18.24    343.4 
+      Ballast Water density=1.025 t/m3 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB03.07     Water Ballast 03.07   1060.7     49.8   47.39  15.79   3.96   2008.8 
+      WB03.08     Water Ballast 03.08    982.0     46.1   47.52 -15.74   3.78   1974.6 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB09.01     Water Ballast 09.01    438.6    100.0  182.90  -0.00   1.12      0.0 
+      WB09.07     Water Ballast 09.07    633.4    100.0  183.26  12.72   8.16      0.0 
+      WB09.08     Water Ballast 09.08    633.4    100.0  183.26 -12.72   8.16      0.0 
+      WB10.01     Water Ballast 10.01    314.2    100.0  194.02   0.00   1.44      0.0 
+      WB11.01     Water Ballast 11.01    500.0     30.5  205.73  -0.00   3.18   1783.4 
+      Total of Ballast Water           17398.9           112.02   0.07   2.15   5766.9 
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Solid cargo density=1.000 t/m3 
+      (CAS)       NON-BUOYANT CARGO    20000.0           105.40   0.00  36.00      0.0 
+      Stores 
+      (STO)                              100.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       41820.0           105.77   0.00  18.88   8086.3 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        62691.4           108.33  -0.00  16.07   8086.3 
+      _                                                                              _
+
+
+00 10 20 30 40 50 60 70
+
+70
+heeling angle    degree
+
+HPHI
+
+-4
+
+-2
+
+0
+
+2
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.068   0.280 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   0.061 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   0.886 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  16.722 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150   6.790 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   1.395       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  37.825 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400  13.932       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  64.080 deg   OK 
+      ---------------------------------------------------------------------------------
+
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   24.450
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   24.450
+      AIR_DUCT_1      UNPROTECTED           64.1   222.00   11.375   33.350   24.450
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -4065.5 t         position:    75.4 m    94
+      Shear force (max)          5377.5 t                     135.4 m   169
+      Max. rel. shear force        77.6 %                     135.4 m   169
+      Sagging moment            -139573 tm                     98.4 m   123
+      Hogging moment            35978.0 tm                    164.0 m   205
+      Max. rel. bending moment     77.8 %                      98.4 m   123
+
+
+      LOADING CONDITION LC11, Non-Buoyant Cargo, departure 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    10656   -13513    30261    10.4
+              42.00    33.60    15452   -50240    70924     8.4
+              57.00    45.60    -1954   -94804   111952    10.2
+              72.00    57.60   -34953  -139384   160929    30.5
+              87.00    69.60   -77010  -183412   211763    46.1
+             102.00    81.60  -119574  -183412   211763    67.7
+             117.00    93.60  -137961  -183412   211763    77.0
+             132.00   105.60  -135889  -183412   211763    75.9
+             147.00   117.60  -112594  -183412   211763    64.2
+             162.00   129.60   -68877  -183412   211763    42.0
+             180.00   144.00     -947  -183412   211763     7.7
+             198.00   158.40    33027  -164872   190357    11.4
+             210.00   168.00    34680  -129204   149176    17.7
+             222.00   177.60    23196   -93541   108000    15.8
+             237.00   189.60     8553   -48977    56548     9.0
+             249.00   199.20     2218   -22505    25984     2.0
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80      932    -4679     4679    19.9
+              42.00    33.60     -789    -6075     6075    13.0
+              57.00    45.60    -2095    -6418     6418    32.6
+              72.00    57.60    -3424    -6718     6718    51.0
+              87.00    69.60    -3631    -7000     7000    51.9
+             102.00    81.60    -2431    -7000     7000    34.7
+             117.00    93.60     -681    -7000     7000     9.7
+             132.00   105.60     1044    -7000     7000    14.9
+             147.00   117.60     2791    -7000     7000    39.9
+             162.00   129.60     4513    -7000     7000    64.5
+             180.00   144.00     3730    -6724     6724    55.5
+             198.00   158.40      998    -6269     6269    15.9
+             210.00   168.00     -640    -5824     5824    11.0
+             222.00   177.60    -1726    -5380     5380    32.1
+             237.00   189.60     -722    -4339     4339    16.6
+             249.00   199.20     -467    -3024     3024    15.4
+          -----------------------------------------------------
+ 
+
+4.9 LC12 Non-Buoyant Cargo, arrival 
+
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC12: Non-Buoyant Cargo, arrival
+      FLOATING POSITION
+      Mean draught (moulded)      8.79 m    KM above the moulded base  23.12 m
+      Draught at AP (moulded)     8.79 m    KG above the moulded base  16.17 m
+      Draught at FP (moulded)     8.79 m    GM0 (solid)                 6.95 m
+      Trim                        0.00 m    Free surface correction    -0.20 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                 6.75 m
+      Mean draught (heel 0)       8.79 m
+      Trim (heel 0)               0.00 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil                559.2   86.85  -0.17   3.17   5105.4 
+      Diesel Oil                     41.5  119.85   3.14   2.87    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                 4.0  179.80  -9.33   5.65     10.1 
+      Fresh Water                    67.1  195.35   0.00  17.43    343.4 
+      Ballast Water               19656.3  106.92  -0.00   2.83   6588.6 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Gray Water                     49.4  180.00   5.25   7.00      0.0 
+      Bilge Water                    40.9  187.40  -2.57   2.31      0.0 
+      Sludge                         71.0  187.03   3.22   1.73      0.0 
+      Solid cargo                 20000.0  105.40   0.00  36.00      0.0 
+      Stores                         10.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  40920.4  105.85   0.01  19.10  12330.4 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   61791.8  108.42   0.00  16.17  12330.4 
+
+
+      LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1     126.2     12.0   63.60   5.69   3.08   1429.4 
+      HFO2        HFO Storage Tank 2     151.5     12.0   64.80  -5.69   3.08   1715.3 
+      HFO3        HFO Storage Tank 3      99.2     12.0   76.61   5.36   3.10    973.6 
+      HFO4        HFO Storage Tank 4      99.2     12.0   76.61  -5.36   3.10    973.6 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil            559.2            86.85  -0.17   3.17   5105.4 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        22.9     12.0   70.80   5.69   3.08    259.6 
+      T09.07      MDO Storage P            3.7     12.0  179.29   9.58   2.21      6.4 
+      T09.08      MDO Storage S            3.7     12.0  179.29  -9.58   2.21      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 41.5           119.85   3.14   2.87    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water               4.0     10.0  179.80  -9.33   5.65     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           21.9     10.0  194.80   4.81  16.69     60.2 
+      FW2         Fresh Water S           21.9     10.0  194.80  -4.81  16.69     60.2 
+      FW3         Fresh Water C           15.7     10.0  196.40   0.00  19.93    156.9 
+      T10.01      Potable Water            7.6     10.0  196.40   0.00  16.53     66.2 
+      Total of Fresh Water                67.1           195.35   0.00  17.43    343.4 
+      Ballast Water density=1.025 t/m3 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB03.07     Water Ballast 03.07   1995.0     93.7   46.56  16.09   6.01   2085.3 
+      WB03.08     Water Ballast 03.08   1995.0     93.7   46.56 -16.09   6.01   2085.3 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB09.01     Water Ballast 09.01    438.6    100.0  182.90  -0.00   1.12      0.0 
+      WB09.07     Water Ballast 09.07    633.4    100.0  183.26  12.72   8.16      0.0 
+      WB09.08     Water Ballast 09.08    633.4    100.0  183.26 -12.72   8.16      0.0 
+      WB10.01     Water Ballast 10.01    314.2    100.0  194.02   0.00   1.44      0.0 
+      WB11.01     Water Ballast 11.01    810.1     49.4  205.80   0.00   4.56   2418.1 
+      Total of Ballast Water           19656.3           106.92  -0.00   2.83   6588.6 
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+ 
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Gray Water density=1.000 t/m3 
+      T09.11      Black Water             18.5    100.0  180.00   4.16   7.00      0.0 
+      T09.13      Gray Water              30.9    100.0  180.00   5.91   7.00      0.0 
+      Total of Gray Water                 49.4           180.00   5.25   7.00      0.0 
+      Bilge Water density=1.000 t/m3 
+      T09.20      Bilge Water Settling    10.4    100.0  188.38  -0.73   3.97      0.0 
+      T09.22      Bilge Water             30.5    100.0  187.07  -3.20   1.74      0.0 
+      Total of Bilge Water                40.9           187.40  -2.57   2.31      0.0 
+      Sludge density=2.380 t/m3 
+      T09.21      Sludge                  71.0     98.0  187.03   3.22   1.73      0.0 
+      Solid cargo density=1.000 t/m3 
+      (CAS)       NON-BUOYANT CARGO    20000.0           105.40   0.00  36.00      0.0 
+      Stores 
+      (STO)                               10.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       40920.4           105.85   0.01  19.10  12330.4 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        61791.8           108.42   0.00  16.17  12330.4 
+      _                                                                              _
+
+
+
+00 10 20 30 40 50 60 70
+
+70
+heeling angle    degree
+
+HPHI
+
+-4
+
+-2
+
+0
+
+2
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.068   0.297 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   0.069 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   0.951 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  17.283 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150   6.751 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   1.410       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  38.257 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400  13.970       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  64.470 deg   OK 
+      ---------------------------------------------------------------------------------
+
+
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   24.565
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   24.560
+      AIR_DUCT_1      UNPROTECTED           64.5   222.00   11.375   33.350   24.554
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -4124.2 t         position:    75.4 m    94
+      Shear force (max)          5002.6 t                     135.4 m   169
+      Max. rel. shear force        72.2 %                     135.4 m   169
+      Sagging moment            -106847 tm                    102.6 m   128
+      Hogging moment            43819.0 tm                    162.4 m   203
+      Max. rel. bending moment     61.2 %                     102.6 m   128
+
+ 
+      LOADING CONDITION LC12, Non-Buoyant Cargo, arrival 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    10849   -13513    30261    11.3
+              42.00    33.60    16974   -50240    70924    10.9
+              57.00    45.60     7159   -94804   111952     1.4
+              72.00    57.60    -5850  -139384   160929    11.1
+              87.00    69.60   -32218  -183412   211763    23.5
+             102.00    81.60   -75786  -183412   211763    45.5
+             117.00    93.60  -101481  -183412   211763    58.5
+             132.00   105.60  -106015  -183412   211763    60.8
+             147.00   117.60   -88628  -183412   211763    52.0
+             162.00   129.60   -50119  -183412   211763    32.5
+             180.00   144.00    12490  -183412   211763     0.9
+             198.00   158.40    42146  -164872   190357    16.6
+             210.00   168.00    41478  -129204   149176    22.6
+             222.00   177.60    28090   -93541   108000    20.7
+             237.00   189.60    11745   -48977    56548    15.1
+             249.00   199.20     4176   -22505    25984    10.1
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80      973    -4679     4679    20.8
+              42.00    33.60     -668    -6075     6075    11.0
+              57.00    45.60     -945    -6418     6418    14.7
+              72.00    57.60    -1239    -6718     6718    18.4
+              87.00    69.60    -3197    -7000     7000    45.7
+             102.00    81.60    -3067    -7000     7000    43.8
+             117.00    93.60    -1259    -7000     7000    18.0
+             132.00   105.60      524    -7000     7000     7.5
+             147.00   117.60     2329    -7000     7000    33.3
+             162.00   129.60     4109    -7000     7000    58.7
+             180.00   144.00     3397    -6724     6724    50.5
+             198.00   158.40      735    -6269     6269    11.7
+             210.00   168.00     -858    -5824     5824    14.7
+             222.00   177.60    -1902    -5380     5380    35.4
+             237.00   189.60     -754    -4339     4339    17.4
+             249.00   199.20     -750    -3024     3024    24.8
+          -----------------------------------------------------
+
+ 
+
+4.10 LC23 Buoyant cargo MLT 116C, departure 
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC23: Buoyant Cargo (MLT 116C jackup), departure
+      FLOATING POSITION
+      Mean draught (moulded)      8.30 m    KM above the moulded base  23.77 m
+      Draught at AP (moulded)     8.30 m    KG above the moulded base  10.96 m
+      Draught at FP (moulded)     8.30 m    GM0 (solid)                12.81 m
+      Trim                        0.00 m    Free surface correction    -0.17 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                12.65 m
+      Mean draught (heel 0)       8.30 m
+      Trim (heel 0)               0.00 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil               3500.0   71.26  -0.31   6.16   1683.1 
+      Diesel Oil                     80.0  152.31   1.43   3.22    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                20.0  179.80  -9.33   6.25     10.1 
+      Fresh Water                   300.0  195.55   0.00  18.24    343.4 
+      Ballast Water               23777.6  109.25   0.04   3.27   6806.7 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Gray Water                     24.7  180.00   5.25   6.25      5.0 
+      Bilge Water                    20.4  187.24  -2.65   1.91    133.0 
+      Sludge                         36.2  186.86   3.31   1.46    315.1 
+      Solid cargo                  8654.0  109.00   0.00  35.25      0.0 
+      Stores                        100.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  36934.1  106.20   0.00  11.24   9579.2 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   57805.5  108.82  -0.00  10.96   9579.2 
+
+
+      LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1    1031.0     98.0   63.60   5.51   6.61      0.0 
+      HFO2        HFO Storage Tank 2    1237.2     98.0   64.80  -5.51   6.61      0.0 
+      HFO3        HFO Storage Tank 3     574.3     69.5   76.72   5.32   5.47    834.7 
+      HFO4        HFO Storage Tank 4     574.4     69.5   76.72  -5.32   5.47    834.7 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil           3500.0            71.26  -0.31   6.16   1683.1 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        20.1     10.5   70.80   5.69   3.02    259.6 
+      T09.07      MDO Storage P           24.4     78.6  179.30   9.58   3.38      6.4 
+      T09.08      MDO Storage S           24.4     78.6  179.30  -9.58   3.38      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 80.0           152.31   1.43   3.22    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water              20.0     49.8  179.80  -9.33   6.25     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           80.0     36.5  194.80   4.81  17.46     60.2 
+      FW2         Fresh Water S           80.0     36.5  194.80  -4.81  17.46     60.2 
+      FW3         Fresh Water C           70.0     44.7  196.40   0.00  20.64    156.9 
+      T10.01      Potable Water           70.0     92.6  196.40   0.00  17.61     66.2 
+      Total of Fresh Water               300.0           195.55   0.00  18.24    343.4 
+      Ballast Water density=1.025 t/m3 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB03.07     Water Ballast 03.07   1174.8     55.2   47.22  15.85   4.22   2044.9 
+      WB03.08     Water Ballast 03.08   1112.8     52.3   47.31 -15.82   4.08   2027.1 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB04.07     Water Ballast 04.07   2001.6    100.0   69.60  16.44   6.70      0.0 
+      WB04.08     Water Ballast 04.08   2001.6    100.0   69.60 -16.44   6.70      0.0 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB08.03     Water Ballast 08.03    189.6    100.0  165.55  14.11   1.49      0.0 
+      WB08.04     Water Ballast 08.04    189.6    100.0  165.55 -14.11   1.49      0.0 
+      WB08.07     Water Ballast 08.07   1199.6    100.0  167.13  15.42   7.04      0.0 
+      WB08.08     Water Ballast 08.08   1199.6    100.0  167.13 -15.42   7.04      0.0 
+      WB09.01     Water Ballast 09.01    438.6    100.0  182.90  -0.00   1.12      0.0 
+      WB10.01     Water Ballast 10.01    314.2    100.0  194.02   0.00   1.44      0.0 
+      WB11.01     Water Ballast 11.01   1119.0     68.2  205.76  -0.00   5.74   2734.7 
+      Total of Ballast Water           23777.6           109.25   0.04   3.27   6806.7 
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+      Gray Water density=1.000 t/m3 
+      T09.11      Black Water              9.3     50.0  180.00   4.16   6.25      0.9 
+      T09.13      Gray Water              15.4     50.0  180.00   5.91   6.25      4.1 
+      Total of Gray Water                 24.7           180.00   5.25   6.25      5.0 
+      Bilge Water density=1.000 t/m3 
+      T09.20      Bilge Water Settling     5.2     50.0  188.36  -0.73   3.21      0.6 
+      T09.22      Bilge Water             15.2     50.0  186.86  -3.31   1.46    132.4 
+      Total of Bilge Water                20.4           187.24  -2.65   1.91    133.0 
+      Sludge density=2.380 t/m3 
+      T09.21      Sludge                  36.2     50.0  186.86   3.31   1.46    315.1 
+      Solid cargo density=1.000 t/m3 
+      (CAS)       SG (31.2 0 37.2)      8654.0           109.00   0.00  35.25      0.0 
+      Stores 
+      (STO)                              100.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       36934.1           106.20   0.00  11.24   9579.2 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        57805.5           108.82  -0.00  10.96   9579.2 
+      _                                                                              _
+
+
+00 10 20 30 40 50 60 70 80
+heeling angle    degree
+
+HPHI
+
+-1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.059   1.208 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   0.664 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   4.042 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  26.488 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150  12.648 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   2.211       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  74.634 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400   4.174       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  66.331 deg   OK 
+      ---------------------------------------------------------------------------------
+
+
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   25.050
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   25.050
+      AIR_DUCT_1      UNPROTECTED           66.3   222.00   11.375   33.350   25.050
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -2156.5 t         position:   158.4 m   198
+      Shear force (max)          2103.2 t                      89.3 m   112
+      Max. rel. shear force        41.5 %                     195.4 m   244
+      Sagging moment           -11524.2 tm                     68.4 m    86
+      Hogging moment            91695.0 tm                    142.3 m   178
+      Max. rel. bending moment     40.0 %                       8.0 m    10
+
+
+      LOADING CONDITION LC23, Buoyant Cargo (MLT 116C jackup), departure 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    11608   -13513    30261    14.8
+              42.00    33.60    23315   -50240    70924    21.4
+              57.00    45.60    16102   -94804   111952     7.3
+              72.00    57.60    -1408  -139384   160929     8.1
+              87.00    69.60   -11404  -183412   211763    12.9
+             102.00    81.60     -117  -183412   211763     7.2
+             117.00    93.60    24975  -183412   211763     5.5
+             132.00   105.60    49094  -183412   211763    17.7
+             147.00   117.60    70315  -183412   211763    28.4
+             162.00   129.60    85144  -183412   211763    35.9
+             180.00   144.00    91595  -183412   211763    39.2
+             198.00   158.40    76716  -164872   190357    36.0
+             210.00   168.00    57305  -129204   149176    34.0
+             222.00   177.60    40592   -93541   108000    33.1
+             237.00   189.60    20853   -48977    56548    32.3
+             249.00   199.20     6936   -22505    25984    21.4
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80     1134    -4679     4679    24.2
+              42.00    33.60     -156    -6075     6075     2.6
+              57.00    45.60    -1023    -6418     6418    15.9
+              72.00    57.60    -1909    -6718     6718    28.4
+              87.00    69.60      204    -7000     7000     2.9
+             102.00    81.60     2014    -7000     7000    28.8
+             117.00    93.60     2089    -7000     7000    29.8
+             132.00   105.60     1916    -7000     7000    27.4
+             147.00   117.60     1541    -7000     7000    22.0
+             162.00   129.60      916    -7000     7000    13.1
+             180.00   144.00     -112    -6724     6724     1.9
+             198.00   158.40    -2157    -6269     6269    34.4
+             210.00   168.00    -1916    -5824     5824    32.9
+             222.00   177.60    -1633    -5380     5380    30.3
+             237.00   189.60    -1581    -4339     4339    36.4
+             249.00   199.20    -1191    -3024     3024    39.4
+          -----------------------------------------------------
+
+
+ 
+
+ 
+
+
+ 
+
+4.11 LC24 Buoyant cargo MLT 116C, arrival 
+
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC24: Buoyant Cargo (MLT 116C jackup), arrival
+      FLOATING POSITION
+      Mean draught (moulded)      8.08 m    KM above the moulded base  24.10 m
+      Draught at AP (moulded)     8.08 m    KG above the moulded base  11.04 m
+      Draught at FP (moulded)     8.08 m    GM0 (solid)                13.05 m
+      Trim                        0.00 m    Free surface correction    -0.23 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                12.83 m
+      Mean draught (heel 0)       8.08 m
+      Trim (heel 0)               0.00 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil                559.2   86.85  -0.17   3.17   5105.4 
+      Diesel Oil                     41.5  119.85   3.14   2.87    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                 4.0  179.80  -9.33   5.65     10.1 
+      Fresh Water                    67.1  195.35   0.00  17.43    343.4 
+      Ballast Water               25246.5  105.94  -0.00   3.57   6926.2 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Gray Water                     49.4  180.00   5.25   7.00      0.0 
+      Bilge Water                    40.9  187.40  -2.57   2.31      0.0 
+      Sludge                         71.0  187.03   3.22   1.73      0.0 
+      Solid cargo                  8654.0  109.00   0.00  35.25      0.0 
+      Stores                         10.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  35164.7  106.35   0.01  11.40  12668.0 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   56036.1  108.99   0.00  11.04  12668.0 
+
+
+      LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1     126.2     12.0   63.60   5.69   3.08   1429.4 
+      HFO2        HFO Storage Tank 2     151.5     12.0   64.80  -5.69   3.08   1715.3 
+      HFO3        HFO Storage Tank 3      99.2     12.0   76.61   5.36   3.10    973.6 
+      HFO4        HFO Storage Tank 4      99.2     12.0   76.61  -5.36   3.10    973.6 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil            559.2            86.85  -0.17   3.17   5105.4 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        22.9     12.0   70.80   5.69   3.08    259.6 
+      T09.07      MDO Storage P            3.7     12.0  179.29   9.58   2.21      6.4 
+      T09.08      MDO Storage S            3.7     12.0  179.29  -9.58   2.21      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 41.5           119.85   3.14   2.87    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water               4.0     10.0  179.80  -9.33   5.65     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           21.9     10.0  194.80   4.81  16.69     60.2 
+      FW2         Fresh Water S           21.9     10.0  194.80  -4.81  16.69     60.2 
+      FW3         Fresh Water C           15.7     10.0  196.40   0.00  19.93    156.9 
+      T10.01      Potable Water            7.6     10.0  196.40   0.00  16.53     66.2 
+      Total of Fresh Water                67.1           195.35   0.00  17.43    343.4 
+      Ballast Water density=1.025 t/m3 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB03.07     Water Ballast 03.07   1847.5     86.8   46.64  16.06   5.70   2085.3 
+      WB03.08     Water Ballast 03.08   1847.5     86.8   46.64 -16.06   5.70   2085.3 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB04.07     Water Ballast 04.07   2001.6    100.0   69.60  16.44   6.70      0.0 
+      WB04.08     Water Ballast 04.08   2001.6    100.0   69.60 -16.44   6.70      0.0 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB08.03     Water Ballast 08.03    189.6    100.0  165.55  14.11   1.49      0.0 
+      WB08.04     Water Ballast 08.04    189.6    100.0  165.55 -14.11   1.49      0.0 
+      WB08.07     Water Ballast 08.07   1199.6    100.0  167.13  15.42   7.04      0.0 
+      WB08.08     Water Ballast 08.08   1199.6    100.0  167.13 -15.42   7.04      0.0 
+      WB09.01     Water Ballast 09.01    438.6    100.0  182.90  -0.00   1.12      0.0 
+      WB10.01     Water Ballast 10.01    314.2    100.0  194.02   0.00   1.44      0.0 
+      WB11.01     Water Ballast 11.01   1180.6     72.0  205.73  -0.00   5.95   2755.7 
+      Total of Ballast Water           25246.5           105.94  -0.00   3.57   6926.2 
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+      Gray Water density=1.000 t/m3 
+      T09.11      Black Water             18.5    100.0  180.00   4.16   7.00      0.0 
+      T09.13      Gray Water              30.9    100.0  180.00   5.91   7.00      0.0 
+      Total of Gray Water                 49.4           180.00   5.25   7.00      0.0 
+      Bilge Water density=1.000 t/m3 
+      T09.20      Bilge Water Settling    10.4    100.0  188.38  -0.73   3.97      0.0 
+      T09.22      Bilge Water             30.5    100.0  187.07  -3.20   1.74      0.0 
+      Total of Bilge Water                40.9           187.40  -2.57   2.31      0.0 
+      Sludge density=2.380 t/m3 
+      T09.21      Sludge                  71.0     98.0  187.03   3.22   1.73      0.0 
+      Solid cargo density=1.000 t/m3 
+      (CAS)       SG (31.2 0 37.2)      8654.0           109.00   0.00  35.25      0.0 
+      Stores 
+      (STO)                               10.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       35164.7           106.35   0.01  11.40  12668.0 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        56036.1           108.99   0.00  11.04  12668.0 
+      _                                                                              _
+
+
+00 10 20 30 40 50 60 70 80
+heeling angle    degree
+
+HPHI
+
+-1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.059   1.245 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   0.693 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   4.217 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  26.483 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150  12.829 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   2.180       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  75.149 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400   4.195       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  67.167 deg   OK 
+      ---------------------------------------------------------------------------------
+
+
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   25.273
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   25.270
+      AIR_DUCT_1      UNPROTECTED           67.2   222.00   11.375   33.350   25.267
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -2261.7 t         position:   158.4 m   198
+      Shear force (max)          1358.4 t                      95.9 m   120
+      Max. rel. shear force        41.5 %                     198.4 m   248
+      Sagging moment               -0.9 tm                    216.0 m   270
+      Hogging moment            93797.8 tm                    138.6 m   173
+      Max. rel. bending moment     40.3 %                     138.6 m   173
+
+
+      LOADING CONDITION LC24, Buoyant Cargo (MLT 116C jackup), arrival 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    11858   -13513    30261    15.9
+              42.00    33.60    25827   -50240    70924    25.6
+              57.00    45.60    26088   -94804   111952    16.9
+              72.00    57.60    25902  -139384   160929    10.1
+              87.00    69.60    27999  -183412   211763     7.0
+             102.00    81.60    35383  -183412   211763    10.7
+             117.00    93.60    50964  -183412   211763    18.6
+             132.00   105.60    66972  -183412   211763    26.7
+             147.00   117.60    81479  -183412   211763    34.1
+             162.00   129.60    90991  -183412   211763    38.9
+             180.00   144.00    92912  -183412   211763    39.8
+             198.00   158.40    75507  -164872   190357    35.3
+             210.00   168.00    55522  -129204   149176    32.7
+             222.00   177.60    39060   -93541   108000    31.6
+             237.00   189.60    20418   -48977    56548    31.5
+             249.00   199.20     7344   -22505    25984    23.1
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80     1193    -4679     4679    25.5
+              42.00    33.60       58    -6075     6075     1.0
+              57.00    45.60       11    -6418     6418     0.2
+              72.00    57.60      -55    -6718     6718     0.8
+              87.00    69.60      365    -7000     7000     5.2
+             102.00    81.60     1163    -7000     7000    16.6
+             117.00    93.60     1355    -7000     7000    19.4
+             132.00   105.60     1299    -7000     7000    18.6
+             147.00   117.60     1040    -7000     7000    14.9
+             162.00   129.60      532    -7000     7000     7.6
+             180.00   144.00     -357    -6724     6724     5.3
+             198.00   158.40    -2262    -6269     6269    36.1
+             210.00   168.00    -1931    -5824     5824    33.2
+             222.00   177.60    -1567    -5380     5380    29.1
+             237.00   189.60    -1411    -4339     4339    32.5
+             249.00   199.20    -1247    -3024     3024    41.2
+          -----------------------------------------------------
+
+
+
+4.12 LC25 Buoyant cargo Super Gorilla 16000t, departure 
+
+
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC25: Buoyant Cargo Super Gorilla 16000t, dep.
+      FLOATING POSITION
+      Mean draught (moulded)      9.68 m    KM above the moulded base  22.18 m
+      Draught at AP (moulded)     9.68 m    KG above the moulded base  13.79 m
+      Draught at FP (moulded)     9.68 m    GM0 (solid)                 8.40 m
+      Trim                        0.00 m    Free surface correction    -0.15 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                 8.25 m
+      Mean draught (heel 0)       9.68 m
+      Trim (heel 0)               0.00 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil               3500.0   71.26  -0.31   6.16   1683.1 
+      Diesel Oil                     80.0  152.31   1.43   3.22    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                20.0  179.80  -9.33   6.25     10.1 
+      Fresh Water                   300.0  195.55   0.00  18.24    343.4 
+      Ballast Water               27787.4   95.86   0.04   4.00   7440.2 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Gray Water                     24.7  180.00   5.25   6.25      5.0 
+      Bilge Water                    20.4  187.24  -2.65   1.91    133.0 
+      Sludge                         36.2  186.86   3.31   1.46    315.1 
+      Solid cargo                 16000.0  127.00   0.00  37.00      0.0 
+      Stores                        100.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  48289.9  105.14   0.00  15.23  10212.7 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   69161.3  107.65  -0.00  13.79  10212.7 
+
+
+
+
+      LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1    1031.0     98.0   63.60   5.51   6.61      0.0 
+      HFO2        HFO Storage Tank 2    1237.2     98.0   64.80  -5.51   6.61      0.0 
+      HFO3        HFO Storage Tank 3     574.3     69.5   76.72   5.32   5.47    834.7 
+      HFO4        HFO Storage Tank 4     574.4     69.5   76.72  -5.32   5.47    834.7 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil           3500.0            71.26  -0.31   6.16   1683.1 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        20.1     10.5   70.80   5.69   3.02    259.6 
+      T09.07      MDO Storage P           24.4     78.6  179.30   9.58   3.38      6.4 
+      T09.08      MDO Storage S           24.4     78.6  179.30  -9.58   3.38      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 80.0           152.31   1.43   3.22    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water              20.0     49.8  179.80  -9.33   6.25     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           80.0     36.5  194.80   4.81  17.46     60.2 
+      FW2         Fresh Water S           80.0     36.5  194.80  -4.81  17.46     60.2 
+      FW3         Fresh Water C           70.0     44.7  196.40   0.00  20.64    156.9 
+      T10.01      Potable Water           70.0     92.6  196.40   0.00  17.61     66.2 
+      Total of Fresh Water               300.0           195.55   0.00  18.24    343.4 
+
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Ballast Water density=1.025 t/m3 
+      WB02.05     Water Ballast 02.05   1192.3     78.2   23.74   5.38   7.11   2567.5 
+      WB02.06     Water Ballast 02.06   1192.3     78.1   23.76  -5.39   7.11   2564.0 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB03.07     Water Ballast 03.07   2128.4    100.0   46.50  16.11   6.30      0.0 
+      WB03.08     Water Ballast 03.08   2128.4    100.0   46.50 -16.11   6.30      0.0 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB04.07     Water Ballast 04.07   2001.6    100.0   69.60  16.44   6.70      0.0 
+      WB04.08     Water Ballast 04.08   2001.6    100.0   69.60 -16.44   6.70      0.0 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB08.03     Water Ballast 08.03    189.6    100.0  165.55  14.11   1.49      0.0 
+      WB08.04     Water Ballast 08.04    189.6    100.0  165.55 -14.11   1.49      0.0 
+      WB08.07     Water Ballast 08.07    987.3     82.3  167.06  15.32   6.36   1171.4 
+      WB08.08     Water Ballast 08.08    920.1     76.7  167.04 -15.29   6.15   1137.3 
+      WB09.01     Water Ballast 09.01    438.6    100.0  182.90  -0.00   1.12      0.0 
+      WB09.07     Water Ballast 09.07    633.4    100.0  183.26  12.72   8.16      0.0 
+      WB09.08     Water Ballast 09.08    633.4    100.0  183.26 -12.72   8.16      0.0 
+      WB10.01     Water Ballast 10.01    314.2    100.0  194.02   0.00   1.44      0.0 
+      Total of Ballast Water           27787.4            95.86   0.04   4.00   7440.2 
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+      Gray Water density=1.000 t/m3 
+      T09.11      Black Water              9.3     50.0  180.00   4.16   6.25      0.9 
+      T09.13      Gray Water              15.4     50.0  180.00   5.91   6.25      4.1 
+      Total of Gray Water                 24.7           180.00   5.25   6.25      5.0 
+      Bilge Water density=1.000 t/m3 
+      T09.20      Bilge Water Settling     5.2     50.0  188.36  -0.73   3.21      0.6 
+      T09.22      Bilge Water             15.2     50.0  186.86  -3.31   1.46    132.4 
+      Total of Bilge Water                20.4           187.24  -2.65   1.91    133.0 
+      Sludge density=2.380 t/m3 
+      T09.21      Sludge                  36.2     50.0  186.86   3.31   1.46    315.1 
+      Solid cargo density=1.000 t/m3 
+      (CAS)       SG (31.2 0 37.2)     16000.0           127.00   0.00  37.00      0.0 
+      Stores 
+      (STO)                              100.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       48289.9           105.14   0.00  15.23  10212.7 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        69161.3           107.65  -0.00  13.79  10212.7 
+      _                                                                              _
+
+
+00 10 20 30 40 50 60 70 80
+heeling angle    degree
+
+HPHI
+
+-4
+
+-2
+
+0
+
+2
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.069   0.296 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   0.156 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   1.205 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  16.062 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150   8.250 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   1.123       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  46.683 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400   1.984       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  61.282 deg   OK 
+      ---------------------------------------------------------------------------------
+
+
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   23.670
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   23.670
+      AIR_DUCT_1      UNPROTECTED           61.3   222.00   11.375   33.350   23.670
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -1223.2 t         position:   122.4 m   153
+      Shear force (max)          1523.9 t                      81.6 m   102
+      Max. rel. shear force        21.8 %                      81.6 m   102
+      Sagging moment            -2615.3 tm                    188.0 m   235
+      Hogging moment            49150.2 tm                     93.6 m   117
+      Max. rel. bending moment     43.8 %                       8.0 m    10
+
+
+      LOADING CONDITION LC25, Buoyant Cargo Super Gorilla 16000t, dep. 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    10110   -13513    30261     7.9
+              42.00    33.60    25743   -50240    70924    25.4
+              57.00    45.60    29873   -94804   111952    20.6
+              72.00    57.60    26760  -139384   160929    10.6
+              87.00    69.60    28308  -183412   211763     7.2
+             102.00    81.60    42012  -183412   211763    14.1
+             117.00    93.60    49150  -183412   211763    17.7
+             132.00   105.60    43399  -183412   211763    14.8
+             147.00   117.60    31168  -183412   211763     8.6
+             162.00   129.60    16671  -183412   211763     1.3
+             180.00   144.00     4262  -183412   211763     5.0
+             198.00   158.40     4267  -164872   190357     4.8
+             210.00   168.00     5136  -129204   149176     3.5
+             222.00   177.60     1082   -93541   108000     6.1
+             237.00   189.60    -2533   -48977    56548    12.0
+             249.00   199.20    -1895   -22505    25984    15.0
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80     1011    -4679     4679    21.6
+              42.00    33.60      664    -6075     6075    10.9
+              57.00    45.60       51    -6418     6418     0.8
+              72.00    57.60     -581    -6718     6718     8.6
+              87.00    69.60      801    -7000     7000    11.4
+             102.00    81.60     1524    -7000     7000    21.8
+             117.00    93.60      -37    -7000     7000     0.5
+             132.00   105.60     -829    -7000     7000    11.8
+             147.00   117.60    -1181    -7000     7000    16.9
+             162.00   129.60    -1142    -7000     7000    16.3
+             180.00   144.00     -525    -6724     6724     7.8
+             198.00   158.40      380    -6269     6269     6.1
+             210.00   168.00     -215    -5824     5824     3.7
+             222.00   177.60     -675    -5380     5380    12.5
+             237.00   189.60      103    -4339     4339     2.4
+             249.00   199.20      179    -3024     3024     5.9
+          -----------------------------------------------------
+
+
+4.13 LC26 Buoyant cargo Super Gorilla 16000t, arrival 
+
+Page 168 of 503
+
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC26: Buoyant Cargo Super Gorilla 16000t, arr.
+      FLOATING POSITION
+      Mean draught (moulded)      9.48 m    KM above the moulded base  22.37 m
+      Draught at AP (moulded)     9.48 m    KG above the moulded base  13.93 m
+      Draught at FP (moulded)     9.48 m    GM0 (solid)                 8.45 m
+      Trim                        0.00 m    Free surface correction    -0.14 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                 8.31 m
+      Mean draught (heel 0)       9.48 m
+      Trim (heel 0)               0.00 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil                559.2   86.85  -0.17   3.17   5105.4 
+      Diesel Oil                     41.5  119.85   3.14   2.87    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                 4.0  179.80  -9.33   5.65     10.1 
+      Fresh Water                    67.1  195.35   0.00  17.43    343.4 
+      Ballast Water               29357.9   93.87  -0.00   4.23   3485.4 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Gray Water                     49.4  180.00   5.25   7.00      0.0 
+      Bilge Water                    40.9  187.40  -2.57   2.31      0.0 
+      Sludge                         71.0  187.03   3.22   1.73      0.0 
+      Solid cargo                 16000.0  127.00   0.00  37.00      0.0 
+      Stores                         10.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  46622.0  105.31   0.01  15.48   9227.2 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   67493.4  107.82   0.00  13.93   9227.2 
+     LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1     126.2     12.0   63.60   5.69   3.08   1429.4 
+      HFO2        HFO Storage Tank 2     151.5     12.0   64.80  -5.69   3.08   1715.3 
+      HFO3        HFO Storage Tank 3      99.2     12.0   76.61   5.36   3.10    973.6 
+      HFO4        HFO Storage Tank 4      99.2     12.0   76.61  -5.36   3.10    973.6 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil            559.2            86.85  -0.17   3.17   5105.4 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        22.9     12.0   70.80   5.69   3.08    259.6 
+      T09.07      MDO Storage P            3.7     12.0  179.29   9.58   2.21      6.4 
+      T09.08      MDO Storage S            3.7     12.0  179.29  -9.58   2.21      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 41.5           119.85   3.14   2.87    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water               4.0     10.0  179.80  -9.33   5.65     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           21.9     10.0  194.80   4.81  16.69     60.2 
+      FW2         Fresh Water S           21.9     10.0  194.80  -4.81  16.69     60.2 
+      FW3         Fresh Water C           15.7     10.0  196.40   0.00  19.93    156.9 
+      T10.01      Potable Water            7.6     10.0  196.40   0.00  16.53     66.2 
+      Total of Fresh Water                67.1           195.35   0.00  17.43    343.4 
+
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Ballast Water density=1.025 t/m3 
+      WB02.05     Water Ballast 02.05   1524.8    100.0   23.01   5.35   7.78      0.0 
+      WB02.06     Water Ballast 02.06   1526.6    100.0   23.02  -5.35   7.78      0.0 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB03.06     Water Ballast 03.06    567.8     59.1   39.21   0.00   5.18   1014.3 
+      WB03.07     Water Ballast 03.07   2128.4    100.0   46.50  16.11   6.30      0.0 
+      WB03.08     Water Ballast 03.08   2128.4    100.0   46.50 -16.11   6.30      0.0 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB04.07     Water Ballast 04.07   2001.6    100.0   69.60  16.44   6.70      0.0 
+      WB04.08     Water Ballast 04.08   2001.6    100.0   69.60 -16.44   6.70      0.0 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB08.03     Water Ballast 08.03    189.6    100.0  165.55  14.11   1.49      0.0 
+      WB08.04     Water Ballast 08.04    189.6    100.0  165.55 -14.11   1.49      0.0 
+      WB08.07     Water Ballast 08.07   1121.6     93.5  167.11  15.39   6.80   1235.6 
+      WB08.08     Water Ballast 08.08   1121.6     93.5  167.11 -15.39   6.80   1235.6 
+      WB09.01     Water Ballast 09.01    438.6    100.0  182.90  -0.00   1.12      0.0 
+      WB09.07     Water Ballast 09.07    633.4    100.0  183.26  12.72   8.16      0.0 
+      WB09.08     Water Ballast 09.08    633.4    100.0  183.26 -12.72   8.16      0.0 
+      WB10.01     Water Ballast 10.01    314.2    100.0  194.02   0.00   1.44      0.0 
+      Total of Ballast Water           29357.9            93.87  -0.00   4.23   3485.4 
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+      Gray Water density=1.000 t/m3 
+      T09.11      Black Water             18.5    100.0  180.00   4.16   7.00      0.0 
+      T09.13      Gray Water              30.9    100.0  180.00   5.91   7.00      0.0 
+      Total of Gray Water                 49.4           180.00   5.25   7.00      0.0 
+      Bilge Water density=1.000 t/m3 
+      T09.20      Bilge Water Settling    10.4    100.0  188.38  -0.73   3.97      0.0 
+      T09.22      Bilge Water             30.5    100.0  187.07  -3.20   1.74      0.0 
+      Total of Bilge Water                40.9           187.40  -2.57   2.31      0.0 
+      Sludge density=2.380 t/m3 
+      T09.21      Sludge                  71.0     98.0  187.03   3.22   1.73      0.0 
+      Solid cargo density=1.000 t/m3 
+      (CAS)       SG (31.2 0 37.2)     16000.0           127.00   0.00  37.00      0.0 
+      Stores 
+      (STO)                               10.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       46622.0           105.31   0.01  15.48   9227.2 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        67493.4           107.82   0.00  13.93   9227.2 
+      _                                                                              _
+00 10 20 30 40 50 60 70 80
+heeling angle    degree
+
+HPHI
+
+-4
+
+-2
+
+0
+
+2
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.068   0.338 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   0.181 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   1.370 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  17.113 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150   8.310 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   1.184       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  47.713 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400   2.075       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  61.969 deg   OK 
+      ---------------------------------------------------------------------------------
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   23.874
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   23.870
+      AIR_DUCT_1      UNPROTECTED           62.0   222.00   11.375   33.350   23.866
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -1903.5 t         position:   120.0 m   150
+      Shear force (max)          1655.3 t                      38.4 m    48
+      Max. rel. shear force        29.6 %                      20.4 m    26
+      Sagging moment            -4729.4 tm                    185.6 m   232
+      Hogging moment            94251.4 tm                     84.0 m   105
+      Max. rel. bending moment     47.5 %                      48.0 m    60
+
+Page 175 of 503
+
+      LOADING CONDITION LC26, Buoyant Cargo Super Gorilla 16000t, arr. 
+                 FR        X     BEND     BMMN     BMMX   RELBM
+                  #        m       tm       tm       tm       %
+          -----------------------------------------------------
+              21.00    16.80    11967   -13513    30261    16.4
+              42.00    33.60    38219   -50240    70924    46.0
+              57.00    45.60    57629   -94804   111952    47.5
+              72.00    57.60    74221  -139384   160929    42.3
+              87.00    69.60    85898  -183412   211763    36.3
+             102.00    81.60    93607  -183412   211763    40.2
+             117.00    93.60    89011  -183412   211763    37.9
+             132.00   105.60    72794  -183412   211763    29.7
+             147.00   117.60    51364  -183412   211763    18.8
+             162.00   129.60    28935  -183412   211763     7.5
+             180.00   144.00     8685  -183412   211763     2.8
+             198.00   158.40     2665  -164872   190357     5.7
+             210.00   168.00     1425  -129204   149176     6.2
+             222.00   177.60    -2351   -93541   108000     9.5
+             237.00   189.60    -4023   -48977    56548    14.8
+             249.00   199.20    -1902   -22505    25984    15.0
+          -----------------------------------------------------
+       
+                 FR        X    SHEAR     SHMN     SHMX   RELSH
+                  #        m        t        t        t       %
+          -----------------------------------------------------
+              21.00    16.80     1357    -4679     4679    29.0
+              42.00    33.60     1581    -6075     6075    26.0
+              57.00    45.60     1629    -6418     6418    25.4
+              72.00    57.60     1115    -6718     6718    16.6
+              87.00    69.60      793    -7000     7000    11.3
+             102.00    81.60      493    -7000     7000     7.0
+             117.00    93.60     -962    -7000     7000    13.7
+             132.00   105.60    -1648    -7000     7000    23.5
+             147.00   117.60    -1895    -7000     7000    27.1
+             162.00   129.60    -1750    -7000     7000    25.0
+             180.00   144.00    -1007    -6724     6724    15.0
+             198.00   158.40       25    -6269     6269     0.4
+             210.00   168.00     -304    -5824     5824     5.2
+             222.00   177.60     -536    -5380     5380    10.0
+             237.00   189.60      341    -4339     4339     7.9
+             249.00   199.20      187    -3024     3024     6.2
+          -----------------------------------------------------
+
+Page 176 of 503
+
+
+ 
+
+ 
+
+ 
+4.14 LC31 Docking condition 
+
+ 
+
+Z=1.9
+
+Z=6
+
+Z=12.9
+
+Z=19
+
+Y=0.1
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270
+
+      LOADING CONDITION LC31: Docking condition
+      FLOATING POSITION
+      Mean draught (moulded)      5.70 m    KM above the moulded base  29.82 m
+      Draught at AP (moulded)     5.70 m    KG above the moulded base   6.67 m
+      Draught at FP (moulded)     5.70 m    GM0 (solid)                23.15 m
+      Trim                        0.00 m    Free surface correction    -0.28 m
+      Heeling                     0.0  deg
+                                            GM  (fluid)                22.87 m
+      Mean draught (heel 0)       5.70 m
+      Trim (heel 0)               0.00 m
+      LOADS
+      Item                         Weight  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                               (t)     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil                559.2   86.85  -0.17   3.17   5105.4 
+      Diesel Oil                     41.5  119.85   3.14   2.87    273.6 
+      Lubricating Oil                 7.0  179.80   9.33   5.79      9.1 
+      Technical Water                 4.0  179.80  -9.33   5.65     10.1 
+      Fresh Water                    67.1  195.35   0.00  17.43    343.4 
+      Ballast Water               15504.5  108.11  -0.00   1.77   4801.1 
+      Fixed FW ballast              321.1   14.73   0.00   3.55      0.0 
+      Gray Water                     49.4  180.00   5.25   7.00      0.0 
+      Bilge Water                    40.9  187.40  -2.57   2.31      0.0 
+      Sludge                         71.0  187.03   3.22   1.73      0.0 
+      Stores                         10.0  199.20   0.00  29.05      0.0 
+      Crew                            6.0  199.20   0.00  35.70      0.0 
+      Miscellaneous                  87.0  178.40   0.00   5.00      0.0 
+      _                                                                _
+      Deadweight                  16768.6  107.23   0.02   1.98  10542.9 
+      Lightweight                 20871.4  113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)   37640.0  110.67   0.01   6.67  10542.9 
+      _                                                                _
+
+      LOADS
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Heavy Fuel Oil density=0.991 t/m3 
+      HFO1        HFO Storage Tank 1     126.2     12.0   63.60   5.69   3.08   1429.4 
+      HFO2        HFO Storage Tank 2     151.5     12.0   64.80  -5.69   3.08   1715.3 
+      HFO3        HFO Storage Tank 3      99.2     12.0   76.61   5.36   3.10    973.6 
+      HFO4        HFO Storage Tank 4      99.2     12.0   76.61  -5.36   3.10    973.6 
+      T09.03      HFO Settling Tank P     27.8     50.0  186.74   3.94   3.61      5.9 
+      T09.04      HFO Settling Tank S     22.0     50.0  187.16  -3.94   3.65      4.7 
+      T09.05      HFO Service Tank P      18.5     50.0  186.74   6.13   3.61      1.7 
+      T09.06      HFO Service Tank S      14.7     50.0  187.16  -6.13   3.65      1.4 
+      Total of Heavy Fuel Oil            559.2            86.85  -0.17   3.17   5105.4 
+      Diesel Oil density=0.900 t/m3 
+      MGO         MGO Storage Tank        22.9     12.0   70.80   5.69   3.08    259.6 
+      T09.07      MDO Storage P            3.7     12.0  179.29   9.58   2.21      6.4 
+      T09.08      MDO Storage S            3.7     12.0  179.29  -9.58   2.21      6.4 
+      T09.18      MDO Service P            5.6     50.0  181.20   8.63   2.88      0.6 
+      T09.19      MDO Service S            5.6     50.0  181.20  -8.63   2.88      0.6 
+      Total of Diesel Oil                 41.5           119.85   3.14   2.87    273.6 
+      Lubricating Oil density=0.900 t/m3 
+      T09.09      Used LO                  7.0     19.4  179.80   9.33   5.79      9.1 
+      Technical Water density=1.000 t/m3 
+      T09.10      Feed Water               4.0     10.0  179.80  -9.33   5.65     10.1 
+      Fresh Water density=1.000 t/m3 
+      FW1         Fresh Water P           21.9     10.0  194.80   4.81  16.69     60.2 
+      FW2         Fresh Water S           21.9     10.0  194.80  -4.81  16.69     60.2 
+      FW3         Fresh Water C           15.7     10.0  196.40   0.00  19.93    156.9 
+      T10.01      Potable Water            7.6     10.0  196.40   0.00  16.53     66.2 
+      Total of Fresh Water                67.1           195.35   0.00  17.43    343.4 
+      Ballast Water density=1.025 t/m3 
+      WB03.01     Water Ballast 03.01    482.3    100.0   47.42   5.24   1.46      0.0 
+      WB03.02     Water Ballast 03.02    489.9    100.0   47.48  -5.17   1.46      0.0 
+      WB04.01     Water Ballast 04.01   1308.9    100.0   69.62  10.53   1.31      0.0 
+      WB04.02     Water Ballast 04.02   1308.9    100.0   69.62 -10.53   1.31      0.0 
+      WB05.01     Water Ballast 05.01   1320.3    100.0   93.51  10.63   1.30      0.0 
+      WB05.02     Water Ballast 05.02   1320.3    100.0   93.51 -10.63   1.30      0.0 
+      WB05.07     Water Ballast 05.07   1039.5     51.9   93.60  16.44   4.73   2085.3 
+      WB05.08     Water Ballast 05.08   1039.5     51.9   93.60 -16.44   4.73   2085.3 
+      WB06.01     Water Ballast 06.01   1320.3    100.0  117.51  10.63   1.30      0.0 
+      WB06.02     Water Ballast 06.02   1320.3    100.0  117.51 -10.63   1.30      0.0 
+      WB07.01     Water Ballast 07.01   1555.7    100.0  143.70  10.44   1.31      0.0 
+      WB07.02     Water Ballast 07.02   1555.7    100.0  143.70 -10.44   1.31      0.0 
+      WB08.01     Water Ballast 08.01    854.0    100.0  167.59  -0.04   1.03      0.0 
+      WB08.03     Water Ballast 08.03    189.6    100.0  165.55  14.11   1.49      0.0 
+      WB08.04     Water Ballast 08.04    189.6    100.0  165.55 -14.11   1.49      0.0 
+      WB11.01     Water Ballast 11.01    209.6     12.8  205.03  -0.00   1.61    630.6 
+      Total of Ballast Water           15504.5           108.11  -0.00   1.77   4801.1 
+      Fixed FW ballast density=1.000 t/m3 
+      WB02.01     Water Ballast 02.01    321.1    100.0   14.73   0.00   3.55      0.0 
+
+
+      Location    Description           Weight  Filling  L.C.G. T.C.G. V.C.G. Frs.mom. 
+      _                                    (t)        %     (m)    (m)    (m)     (tm)
+      Gray Water density=1.000 t/m3 
+      T09.11      Black Water             18.5    100.0  180.00   4.16   7.00      0.0 
+      T09.13      Gray Water              30.9    100.0  180.00   5.91   7.00      0.0 
+      Total of Gray Water                 49.4           180.00   5.25   7.00      0.0 
+      Bilge Water density=1.000 t/m3 
+      T09.20      Bilge Water Settling    10.4    100.0  188.38  -0.73   3.97      0.0 
+      T09.22      Bilge Water             30.5    100.0  187.07  -3.20   1.74      0.0 
+      Total of Bilge Water                40.9           187.40  -2.57   2.31      0.0 
+      Sludge density=2.380 t/m3 
+      T09.21      Sludge                  71.0     98.0  187.03   3.22   1.73      0.0 
+      Stores 
+      (STO)                               10.0           199.20   0.00  29.05      0.0 
+      Crew 
+      (CREW)                               6.0           199.20   0.00  35.70      0.0 
+      Miscellaneous density=1.000 t/m3 
+      (MIS)                               87.0           178.40   0.00   5.00      0.0 
+      _                                                                              _
+      Deadweight                       16768.6           107.23   0.02   1.98  10542.9 
+      Lightweight                      20871.4           113.44  -0.01  10.44          
+      Displacement (1.025 t/m3)        37640.0           110.67   0.01   6.67  10542.9 
+      _                                                                              _
+
+
+00 10 20 30 40 50 60 70 80
+heeling angle    degree
+
+HPHI
+
+0
+
+2
+
+4
+
+6
+
+8
+
+righting lever    m
+
+EPHI
+
+      ---------------------------------------------------------------------------------
+      RCR          TEXT                                          REQ    ATTV UNIT  STAT
+      ---------------------------------------------------------------------------------
+      V.AREA15-30  Area depending on GZ curve top              0.055   2.815 mrad  OK 
+      V.AREA3040   Area under GZ curve between 30 and 40 deg   0.030   1.489 mrad  OK 
+      V.GZ0.2      Min. GZ > 0.2                               0.200   8.611 m     OK 
+      V.POSMAX15   Top of GZ curve at least 15 degrees        15.000  31.704 deg   OK 
+      V.GM0.15     GM > 0.15 m                                 0.150  22.867 m     OK 
+      IMOWEATHER   IMO weather criterion                       1.000   3.036       OK 
+      ND-RANGE     Range of Stability acc. ND                 36.000  79.986 deg   OK 
+      ND-WO        Wind Overturning acc. ND                    1.400  57.584       OK 
+      ND-DWNFLD    Angle of Downflooding acc. ND              20.000  77.422 deg   OK 
+      ---------------------------------------------------------------------------------
+
+      Relevant openings
+      ------------------------------------------------------------------------------
+      NAME            WT                    IMMA       FR        Y        Z     IMMR
+                                          degree        #        m        m        m
+      ------------------------------------------------------------------------------
+      AIR_DUCT_2      UNPROTECTED              -   222.00  -11.375   33.350   27.653
+      AIR_DUCT_3      UNPROTECTED              -   230.00    0.000   33.350   27.650
+      AIR_DUCT_1      UNPROTECTED           77.4   222.00   11.375   33.350   27.647
+      ------------------------------------------------------------------------------
+      NAME      name                                                     
+      WT        watertightness of opening                                
+      IMMA      immersion angle                                  degree  
+      FR        frame number                                     #       
+      Y         y-coordinate                                     m       
+      Z         z-coordinate                                     m       
+      IMMR      reserve to immersion                             m       
+
+0 50 100 150 200 250
+
+FRAME
+
+-200000
+
+-100000
+
+0
+
+100000
+
+200000
+
+bending moment    tm
+
+-5000
+
+0
+
+5000
+
+shear force    t
+
+-500
+
+0
+
+500
+
+weight distribution    t/m
+
+BMMN BMMX BEND SHMN SHMX SHEAR WD BD
+
+      EXTREME SHEAR FORCE AND BENDING MOMENT
+      Sum of lightweight elements      weight: 20871.4 t     LCG:  113.44 m
+                                                                 x    frame
+      Shear force (min)         -1818.2 t         position:   166.4 m   208
+      Shear force (max)          1879.8 t                      27.2 m    34
+      Max. rel. shear force        33.1 %                      23.2 m    29
+      Sagging moment               -1.9 tm                    214.1 m   268
+      Hogging moment            92983.6 tm                    122.4 m   153
+      Max. rel. bending moment     53.4 %                      36.7 m    46

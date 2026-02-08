@@ -29,8 +29,8 @@ class MainWindow(QMainWindow):
     
     def __init__(self):
         super().__init__()
-        self.init_ui()
         self.init_data()
+        self.init_ui()
     
     def init_data(self):
         """Initialize data and calculators"""

@@ -152,7 +152,12 @@ class StabilityCalculator:
         # Area 0-30°
         mask_30 = heel_angles <= 30
         if np.any(mask_30):
-            area_0_30 = np.trapz(gz_values[mask_30], heel_rad[mask_30])
+            try:
+                # Try new numpy API (numpy >= 2.0)
+                area_0_30 = np.trapezoid(gz_values[mask_30], heel_rad[mask_30])
+            except AttributeError:
+                # Fall back to old API (numpy < 2.0)
+                area_0_30 = np.trapz(gz_values[mask_30], heel_rad[mask_30])
         else:
             area_0_30 = 0
         
@@ -166,7 +171,10 @@ class StabilityCalculator:
         # Area 0-40°
         mask_40 = heel_angles <= 40
         if np.any(mask_40):
-            area_0_40 = np.trapz(gz_values[mask_40], heel_rad[mask_40])
+            try:
+                area_0_40 = np.trapezoid(gz_values[mask_40], heel_rad[mask_40])
+            except AttributeError:
+                area_0_40 = np.trapz(gz_values[mask_40], heel_rad[mask_40])
         else:
             area_0_40 = 0
         
@@ -180,7 +188,10 @@ class StabilityCalculator:
         # Area 30-40°
         mask_30_40 = (heel_angles >= 30) & (heel_angles <= 40)
         if np.any(mask_30_40):
-            area_30_40 = np.trapz(gz_values[mask_30_40], heel_rad[mask_30_40])
+            try:
+                area_30_40 = np.trapezoid(gz_values[mask_30_40], heel_rad[mask_30_40])
+            except AttributeError:
+                area_30_40 = np.trapz(gz_values[mask_30_40], heel_rad[mask_30_40])
         else:
             area_30_40 = 0
         

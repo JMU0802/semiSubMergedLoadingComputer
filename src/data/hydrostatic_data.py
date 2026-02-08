@@ -1,0 +1,179 @@
+"""
+Sample hydrostatic data for semi-submersible ship
+示例静水力数据
+
+This file contains sample hydrostatic data based on typical semi-submersible vessel characteristics.
+数据基于典型半潜船特性的示例静水力数据
+"""
+
+from ..models import HydrostaticData
+
+
+def get_sample_hydrostatic_table():
+    """
+    Get sample hydrostatic table for a semi-submersible ship
+    
+    Returns:
+        List of HydrostaticData objects
+    """
+    # Sample data for a semi-submersible with design characteristics:
+    # LPP ≈ 180m, Breadth ≈ 40m, typical draft range 5-15m
+    
+    hydrostatic_table = [
+        HydrostaticData(
+            draft=5.0,
+            displacement=15000,
+            lcb=0.5,
+            vcb=2.8,
+            lcf=2.0,
+            tpc=45.0,
+            mct=1200,
+            kb=2.8,
+            bm=8.5,
+            gmt=9.2,
+            bmt=8.5,
+            waterplane_area=4500
+        ),
+        HydrostaticData(
+            draft=6.0,
+            displacement=18500,
+            lcb=0.3,
+            vcb=3.3,
+            lcf=1.8,
+            tpc=46.5,
+            mct=1280,
+            kb=3.3,
+            bm=8.0,
+            gmt=8.6,
+            bmt=8.0,
+            waterplane_area=4650
+        ),
+        HydrostaticData(
+            draft=7.0,
+            displacement=22000,
+            lcb=0.2,
+            vcb=3.8,
+            lcf=1.5,
+            tpc=48.0,
+            mct=1350,
+            kb=3.8,
+            bm=7.6,
+            gmt=8.1,
+            bmt=7.6,
+            waterplane_area=4800
+        ),
+        HydrostaticData(
+            draft=8.0,
+            displacement=25800,
+            lcb=0.1,
+            vcb=4.3,
+            lcf=1.2,
+            tpc=49.5,
+            mct=1420,
+            kb=4.3,
+            bm=7.2,
+            gmt=7.6,
+            bmt=7.2,
+            waterplane_area=4950
+        ),
+        HydrostaticData(
+            draft=9.0,
+            displacement=29800,
+            lcb=0.0,
+            vcb=4.8,
+            lcf=1.0,
+            tpc=51.0,
+            mct=1480,
+            kb=4.8,
+            bm=6.9,
+            gmt=7.2,
+            bmt=6.9,
+            waterplane_area=5100
+        ),
+        HydrostaticData(
+            draft=10.0,
+            displacement=34000,
+            lcb=-0.1,
+            vcb=5.3,
+            lcf=0.8,
+            tpc=52.5,
+            mct=1540,
+            kb=5.3,
+            bm=6.6,
+            gmt=6.8,
+            bmt=6.6,
+            waterplane_area=5250
+        ),
+        HydrostaticData(
+            draft=11.0,
+            displacement=38500,
+            lcb=-0.2,
+            vcb=5.8,
+            lcf=0.5,
+            tpc=54.0,
+            mct=1600,
+            kb=5.8,
+            bm=6.3,
+            gmt=6.4,
+            bmt=6.3,
+            waterplane_area=5400
+        ),
+        HydrostaticData(
+            draft=12.0,
+            displacement=43200,
+            lcb=-0.3,
+            vcb=6.3,
+            lcf=0.3,
+            tpc=55.5,
+            mct=1650,
+            kb=6.3,
+            bm=6.0,
+            gmt=6.0,
+            bmt=6.0,
+            waterplane_area=5550
+        ),
+        HydrostaticData(
+            draft=13.0,
+            displacement=48100,
+            lcb=-0.4,
+            vcb=6.8,
+            lcf=0.0,
+            tpc=57.0,
+            mct=1700,
+            kb=6.8,
+            bm=5.8,
+            gmt=5.7,
+            bmt=5.8,
+            waterplane_area=5700
+        ),
+        HydrostaticData(
+            draft=14.0,
+            displacement=53200,
+            lcb=-0.5,
+            vcb=7.3,
+            lcf=-0.2,
+            tpc=58.5,
+            mct=1750,
+            kb=7.3,
+            bm=5.5,
+            gmt=5.3,
+            bmt=5.5,
+            waterplane_area=5850
+        ),
+        HydrostaticData(
+            draft=15.0,
+            displacement=58500,
+            lcb=-0.6,
+            vcb=7.8,
+            lcf=-0.5,
+            tpc=60.0,
+            mct=1800,
+            kb=7.8,
+            bm=5.3,
+            gmt=5.0,
+            bmt=5.3,
+            waterplane_area=6000
+        ),
+    ]
+    
+    return hydrostatic_table

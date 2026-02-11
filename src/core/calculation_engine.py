@@ -109,7 +109,8 @@ class CalculationEngine:
         strength_results = strength_calc.calculate_shear_force_and_bending_moment(
             weight_items,
             draught_mean,
-            total_weight
+            total_weight,
+            trim=trim
         )
         
         # 整合所有结果

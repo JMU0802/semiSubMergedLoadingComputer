@@ -8,13 +8,14 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QVBoxLayout,
                              QHBoxLayout, QTabWidget, QMenuBar, QMenu, QAction,
                              QStatusBar, QToolBar, QMessageBox, QFileDialog)
 from PyQt5.QtCore import Qt, QSize
-from PyQt5.QtGui import QIcon, QFont
+from PyQt5.QtGui import QIcon, QFont, QColor
 import json
 import os
 
 from gui.form1_widget import Form1Widget
 from gui.form2_widget import Form2Widget
 from gui.report_widget import ReportWidget
+from gui.ship_data_viewer import ShipDataViewer
 
 
 class MainWindow(QMainWindow):
@@ -23,7 +24,9 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.current_condition = None
+        self.default_conditions = []  # 存储13个默认工况
         self.init_ui()
+        self.load_default_conditions()  # 加载默认工况
         
     def init_ui(self):
         """初始化用户界面"""
@@ -46,14 +49,18 @@ class MainWindow(QMainWindow):
         self.form1_widget = Form1Widget()
         self.tab_widget.addTab(self.form1_widget, "FORM 1 - 装载数据")
         
-        # Form 2: 稳性计算
+        # Form 2: 稳性与强度计算
         self.form2_widget = Form2Widget()
-        self.tab_widget.addTab(self.form2_widget, "FORM 2 - 稳性计算")
+        self.tab_widget.addTab(self.form2_widget, "FORM 2 - 稳性与强度")
         
         # 报表视图
         self.report_widget = ReportWidget()
         self.tab_widget.addTab(self.report_widget, "报表输出")
-        
+
+        # 船舶数据查看器
+        self.ship_data_viewer = ShipDataViewer()
+        self.tab_widget.addTab(self.ship_data_viewer, "船舶数据")
+
         main_layout.addWidget(self.tab_widget)
         
         # 创建菜单栏
@@ -105,14 +112,48 @@ class MainWindow(QMainWindow):
         exit_action.triggered.connect(self.close)
         file_menu.addAction(exit_action)
         
+        # 工况菜单
+        condition_menu = menubar.addMenu("工况(&L)")
+
+        # 添加13个默认工况的子菜单
+        self.condition_actions = []
+        condition_names = [
+            "LC00 - Lightship",
+            "LC01 - Departure",
+            "LC02 - Arrival",
+            "LC03 - Ballast Departure",
+            "LC04 - Ballast Arrival",
+            "LC05 - Maximum Deadweight",
+            "LC11 - Loading Condition 11",
+            "LC12 - Loading Condition 12",
+            "LC23 - Loading Condition 23",
+            "LC24 - Loading Condition 24",
+            "LC25 - Loading Condition 25",
+            "LC26 - Loading Condition 26",
+            "LC31 - Loading Condition 31",
+        ]
+
+        for i, name in enumerate(condition_names):
+            action = QAction(name, self)
+            action.triggered.connect(lambda checked, idx=i: self.load_condition_by_index(idx))
+            condition_menu.addAction(action)
+            self.condition_actions.append(action)
+
         # 计算菜单
         calc_menu = menubar.addMenu("计算(&C)")
-        
+
         calc_action = QAction("执行计算(&C)", self)
         calc_action.setShortcut("F5")
         calc_action.triggered.connect(self.calculate)
         calc_menu.addAction(calc_action)
-        
+
+        calc_all_action = QAction("计算所有工况(&A)", self)
+        calc_all_action.setShortcut("Ctrl+F5")
+        calc_all_action.triggered.connect(self.calculate_all_conditions)
+        calc_menu.addAction(calc_all_action)
+
+        calc_menu.addSeparator()
+
         verify_action = QAction("验证稳性(&V)", self)
         verify_action.triggered.connect(self.verify_stability)
         calc_menu.addAction(verify_action)
@@ -233,31 +274,39 @@ class MainWindow(QMainWindow):
 
     def load_condition_data(self, data):
         """加载工况数据到界面"""
-        # 设置工况名称
-        self.form1_widget.condition_name.setText(data.get('condition_name', ''))
-
-        # 设置空船数据
-        self.form1_widget.lightweight.setValue(data.get('lightweight', 20871.4))
-        self.form1_widget.lw_lcg.setValue(data.get('lw_lcg', 113.44))
-        self.form1_widget.lw_vcg.setValue(data.get('lw_vcg', 10.44))
+        # Form1Widget使用condition_combo而不是condition_name
+        # 我们不需要设置它，因为它已经通过load_default_condition设置了
 
         # 设置舱室装载
         items = data.get('items', [])
+
+        # 先清空所有舱室
+        self.form1_widget.table.blockSignals(True)
+        for row in range(self.form1_widget.table.rowCount()):
+            item_widget = self.form1_widget.table.item(row, 0)
+            if item_widget and ':' in item_widget.text():  # 舱室行
+                weight_item = self.form1_widget.table.item(row, 3)
+                if weight_item:
+                    weight_item.setText("0.0")
+
+        # 设置工况中的装载
         for item in items:
             tank_id = item.get('tank_id')
-            filling = item.get('filling', 0)
+            weight = item.get('weight', 0)
 
             # 在表格中找到对应的舱室
             for row in range(self.form1_widget.table.rowCount()):
                 name_item = self.form1_widget.table.item(row, 0)
-                if name_item and name_item.data(Qt.UserRole) == tank_id:
-                    filling_spin = self.form1_widget.table.cellWidget(row, 1)
-                    if filling_spin:
-                        filling_spin.setValue(int(filling))
+                if name_item and name_item.text().startswith(tank_id + ":"):
+                    weight_item = self.form1_widget.table.item(row, 3)
+                    if weight_item:
+                        weight_item.setText(f"{weight:.1f}")
                     break
 
+        self.form1_widget.table.blockSignals(False)
+
         # 重新计算
-        self.form1_widget.calculate_summary()
+        self.form1_widget.update_summary()
         
     def calculate(self):
         """执行计算"""
@@ -330,11 +379,250 @@ class MainWindow(QMainWindow):
         
     def show_about(self):
         """显示关于对话框"""
-        QMessageBox.about(self, "关于", 
+        QMessageBox.about(self, "关于",
                          "船舶装载工况计算系统\n"
                          "Semi-Submersible Loading Condition Calculator\n\n"
                          "版本: 1.0\n"
                          "用于半潜船装载工况计算和稳性验证")
+
+    def load_default_conditions(self):
+        """加载13个默认工况"""
+        condition_files = [
+            'LC00.json', 'LC01.json', 'LC02.json', 'LC03.json',
+            'LC04.json', 'LC05.json', 'LC11.json', 'LC12.json',
+            'LC23.json', 'LC24.json', 'LC25.json', 'LC26.json',
+            'LC31.json'
+        ]
+
+        self.default_conditions = []
+
+        for filename in condition_files:
+            filepath = os.path.join('default_conditions', filename)
+            if os.path.exists(filepath):
+                try:
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                    self.default_conditions.append(data)
+                    print(f"已加载工况: {filename}")
+                except Exception as e:
+                    print(f"加载工况 {filename} 失败: {e}")
+                    self.default_conditions.append(None)
+            else:
+                print(f"工况文件不存在: {filepath}")
+                self.default_conditions.append(None)
+
+        print(f"共加载 {len([c for c in self.default_conditions if c is not None])} 个默认工况")
+
+    def load_condition_by_index(self, index):
+        """根据索引加载工况"""
+        if index < 0 or index >= len(self.default_conditions):
+            QMessageBox.warning(self, "警告", "工况索引无效")
+            return
+
+        condition_data = self.default_conditions[index]
+        if condition_data is None:
+            QMessageBox.warning(self, "警告", "该工况数据未加载")
+            return
+
+        try:
+            # 转换工况数据格式以适配GUI
+            converted_data = self.convert_condition_data(condition_data)
+
+            # 加载到Form1
+            self.load_condition_data(converted_data)
+
+            # 自动执行计算
+            self.calculate()
+
+            condition_name = condition_data.get('name', f'LC{index:02d}')
+            self.status_bar.showMessage(f"已加载工况: {condition_name}")
+
+        except Exception as e:
+            QMessageBox.critical(self, "错误", f"加载工况失败：\n{str(e)}")
+            import traceback
+            traceback.print_exc()
+
+    def convert_condition_data(self, condition_data):
+        """转换工况数据格式"""
+        from ship_data.tanks_details_data import get_tank_info
+
+        # 获取工况名称
+        condition_name = condition_data.get('name', 'Unknown')
+
+        # 空船数据（固定值）
+        lightweight = 20871.4
+        lw_lcg = 113.44
+        lw_vcg = 10.44
+
+        # 处理舱室数据
+        tanks_data = condition_data.get('tanks', {})
+        items = []
+
+        for tank_id, tank_info_dict in tanks_data.items():
+            weight = tank_info_dict.get('weight', 0)
+
+            if weight > 0:
+                # 获取舱室详细信息
+                tank_details = get_tank_info(tank_id)
+
+                if tank_details:
+                    # 使用舱室详细信息中的LCG/VCG
+                    lcg = tank_details.get('lcg', 0)
+                    vcg = tank_details.get('vcg', 0)
+                else:
+                    # 如果没有详细信息，使用默认值
+                    lcg = 100.0
+                    vcg = 5.0
+
+                items.append({
+                    'tank_id': tank_id,
+                    'filling': 100,  # 假设100%填充
+                    'weight': weight,
+                    'lcg': lcg,
+                    'vcg': vcg,
+                    'tcg': 0.0,
+                    'fsm': 0.0
+                })
+
+        # 计算总重量和重心
+        total_weight = lightweight
+        total_moment_lcg = lightweight * lw_lcg
+        total_moment_vcg = lightweight * lw_vcg
+        total_fsm = 0.0
+
+        for item in items:
+            total_weight += item['weight']
+            total_moment_lcg += item['weight'] * item['lcg']
+            total_moment_vcg += item['weight'] * item['vcg']
+            total_fsm += item.get('fsm', 0)
+
+        lcg = total_moment_lcg / total_weight if total_weight > 0 else 0
+        vcg = total_moment_vcg / total_weight if total_weight > 0 else 0
+
+        return {
+            'condition_name': condition_name,
+            'lightweight': lightweight,
+            'lw_lcg': lw_lcg,
+            'lw_vcg': lw_vcg,
+            'items': items,
+            'displacement': total_weight,
+            'lcg': lcg,
+            'vcg': vcg,
+            'fsm': total_fsm
+        }
+
+    def calculate_all_conditions(self):
+        """计算所有13个工况"""
+        from PyQt5.QtWidgets import QProgressDialog
+
+        # 创建进度对话框
+        progress = QProgressDialog("正在计算所有工况...", "取消", 0, len(self.default_conditions), self)
+        progress.setWindowTitle("批量计算")
+        progress.setWindowModality(Qt.WindowModal)
+
+        results_summary = []
+
+        for i, condition_data in enumerate(self.default_conditions):
+            if progress.wasCanceled():
+                break
+
+            if condition_data is None:
+                continue
+
+            progress.setValue(i)
+            condition_name = condition_data.get('name', f'LC{i:02d}')
+            progress.setLabelText(f"正在计算: {condition_name}")
+
+            try:
+                # 转换并计算
+                converted_data = self.convert_condition_data(condition_data)
+
+                # 执行计算（不更新界面）
+                self.form2_widget.calculate(converted_data)
+                results = self.form2_widget.get_results()
+
+                if results:
+                    # 收集关键结果
+                    summary = {
+                        'name': condition_name,
+                        'displacement': results.get('displacement', 0),
+                        'draught': results.get('draught', 0),
+                        'gmf': results.get('gmf', 0),
+                        'stability_ok': all(c.get('pass', False) for c in results.get('criteria', {}).values()),
+                    }
+
+                    # 添加强度结果
+                    if 'strength' in results and results['strength']:
+                        strength = results['strength']
+                        summary['strength_ok'] = strength.get('all_ok', False)
+                        summary['max_shear'] = strength.get('max_shear_force', 0)
+                        summary['max_bending'] = strength.get('max_sagging_moment', 0)
+                    else:
+                        summary['strength_ok'] = None
+
+                    results_summary.append(summary)
+
+            except Exception as e:
+                print(f"计算工况 {condition_name} 失败: {e}")
+
+        progress.setValue(len(self.default_conditions))
+
+        # 显示汇总结果
+        self.show_results_summary(results_summary)
+
+    def show_results_summary(self, results_summary):
+        """显示计算结果汇总"""
+        from PyQt5.QtWidgets import QDialog, QVBoxLayout, QTableWidget, QTableWidgetItem, QPushButton
+
+        dialog = QDialog(self)
+        dialog.setWindowTitle("所有工况计算结果汇总")
+        dialog.setGeometry(200, 200, 900, 600)
+
+        layout = QVBoxLayout(dialog)
+
+        # 创建表格
+        table = QTableWidget()
+        table.setColumnCount(7)
+        table.setHorizontalHeaderLabels([
+            "工况", "排水量(t)", "吃水(m)", "GMf(m)",
+            "稳性", "强度", "最大剪力(kN)"
+        ])
+        table.setRowCount(len(results_summary))
+
+        for i, result in enumerate(results_summary):
+            table.setItem(i, 0, QTableWidgetItem(result['name']))
+            table.setItem(i, 1, QTableWidgetItem(f"{result['displacement']:.1f}"))
+            table.setItem(i, 2, QTableWidgetItem(f"{result['draught']:.2f}"))
+            table.setItem(i, 3, QTableWidgetItem(f"{result['gmf']:.3f}"))
+
+            # 稳性状态
+            stability_item = QTableWidgetItem("✓ 通过" if result['stability_ok'] else "✗ 不通过")
+            stability_item.setForeground(QColor(0, 128, 0) if result['stability_ok'] else QColor(255, 0, 0))
+            table.setItem(i, 4, stability_item)
+
+            # 强度状态
+            if result['strength_ok'] is not None:
+                strength_item = QTableWidgetItem("✓ 通过" if result['strength_ok'] else "✗ 不通过")
+                strength_item.setForeground(QColor(0, 128, 0) if result['strength_ok'] else QColor(255, 0, 0))
+            else:
+                strength_item = QTableWidgetItem("未计算")
+            table.setItem(i, 5, strength_item)
+
+            # 最大剪力
+            if 'max_shear' in result:
+                table.setItem(i, 6, QTableWidgetItem(f"{result['max_shear']:.1f}"))
+            else:
+                table.setItem(i, 6, QTableWidgetItem("-"))
+
+        table.resizeColumnsToContents()
+        layout.addWidget(table)
+
+        # 关闭按钮
+        close_btn = QPushButton("关闭")
+        close_btn.clicked.connect(dialog.accept)
+        layout.addWidget(close_btn)
+
+        dialog.exec_()
 
 
 def main():

@@ -137,7 +137,18 @@ class ResultsTab(QWidget):
         widget = QWidget()
         layout = QVBoxLayout()
         widget.setLayout(layout)
-        
+
+        # 强度参数表格
+        params_group = QGroupBox("强度参数")
+        params_layout = QVBoxLayout()
+        self.strength_table = QTableWidget()
+        self.strength_table.setColumnCount(2)
+        self.strength_table.setHorizontalHeaderLabels(["参数", "数值"])
+        self.strength_table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        params_layout.addWidget(self.strength_table)
+        params_group.setLayout(params_layout)
+        layout.addWidget(params_group)
+
         # 剪力曲线
         sf_group = QGroupBox("剪力曲线")
         sf_layout = QVBoxLayout()
@@ -145,7 +156,7 @@ class ResultsTab(QWidget):
         sf_layout.addWidget(self.sf_plot)
         sf_group.setLayout(sf_layout)
         layout.addWidget(sf_group)
-        
+
         # 弯矩曲线
         bm_group = QGroupBox("弯矩曲线")
         bm_layout = QVBoxLayout()
@@ -153,7 +164,7 @@ class ResultsTab(QWidget):
         bm_layout.addWidget(self.bm_plot)
         bm_group.setLayout(bm_layout)
         layout.addWidget(bm_group)
-        
+
         return widget
     
     def update_results(self):
@@ -280,6 +291,36 @@ class ResultsTab(QWidget):
         """更新强度结果"""
         strength = results['strength']
 
+        # 更新强度参数表格
+        params = [
+            ("最大剪力", f"{strength['max_shear_force']:.2f} kN @ Frame {self._position_to_frame(strength['position_max_shear']):.0f}"),
+            ("最大中拱弯矩", f"{strength['max_sagging_moment']:.2f} kN·m @ Frame {self._position_to_frame(strength['position_max_sagging']):.0f}"),
+            ("最大中垂弯矩", f"{strength['max_hogging_moment']:.2f} kN·m @ Frame {self._position_to_frame(strength['position_max_hogging']):.0f}"),
+            ("许用剪力", f"{strength['allowable_shear_force']:.2f} kN"),
+            ("许用中拱弯矩", f"{strength['allowable_sagging_moment']:.2f} kN·m"),
+            ("许用中垂弯矩", f"{strength['allowable_hogging_moment']:.2f} kN·m"),
+            ("", ""),  # 空行
+            ("边界条件检查", ""),
+            ("V(0)", f"{strength['boundary_check']['V(0)']:.6f} t"),
+            ("V(L)", f"{strength['boundary_check']['V(L)']:.6f} t"),
+            ("M(0)", f"{strength['boundary_check']['M(0)']:.6f} t·m"),
+            ("M(L)", f"{strength['boundary_check']['M(L)']:.6f} t·m"),
+        ]
+
+        self.strength_table.setRowCount(len(params))
+        for i, (param, value) in enumerate(params):
+            param_item = QTableWidgetItem(param)
+            value_item = QTableWidgetItem(value)
+
+            # 加粗边界条件检查标题
+            if param == "边界条件检查":
+                font = QFont()
+                font.setBold(True)
+                param_item.setFont(font)
+
+            self.strength_table.setItem(i, 0, param_item)
+            self.strength_table.setItem(i, 1, value_item)
+
         # 绘制剪力曲线
         self.sf_plot.plot_shear_force(
             strength['stations'],
@@ -294,4 +335,9 @@ class ResultsTab(QWidget):
             strength.get('max_sagging_moment', 0),
             strength.get('max_hogging_moment', 0)
         )
+
+    def _position_to_frame(self, position):
+        """将位置转换为肋骨号"""
+        # Frame 0 在 -4.24m, 间距 0.8m
+        return (position + 4.24) / 0.8
 

@@ -36,36 +36,36 @@ class MainWindow(QMainWindow):
         # 窗口基本设置
         self.setWindowTitle(f"半潜船装载计算软件 - {SHIP_PARTICULARS['ship_name']}")
         self.setGeometry(100, 100, 1400, 900)
-        
-        # 创建菜单栏
-        self.create_menu_bar()
-        
-        # 创建工具栏
-        self.create_tool_bar()
-        
+
         # 创建中央部件
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
-        
+
         # 主布局
         main_layout = QVBoxLayout()
         central_widget.setLayout(main_layout)
-        
+
         # 创建标签页
         self.tab_widget = QTabWidget()
         main_layout.addWidget(self.tab_widget)
-        
+
         # 装载工况标签页
         self.loading_tab = LoadingTab(self.calc_engine)
         self.tab_widget.addTab(self.loading_tab, "装载工况")
-        
+
         # 计算结果标签页
         self.results_tab = ResultsTab(self.calc_engine)
         self.tab_widget.addTab(self.results_tab, "计算结果")
-        
+
         # 连接信号
         self.loading_tab.calculation_completed.connect(self.on_calculation_completed)
-        
+
+        # 创建菜单栏（在标签页创建之后）
+        self.create_menu_bar()
+
+        # 创建工具栏
+        self.create_tool_bar()
+
         # 创建状态栏
         self.status_bar = QStatusBar()
         self.setStatusBar(self.status_bar)

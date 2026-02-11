@@ -28,24 +28,36 @@ class Form2Widget(QWidget):
         
     def init_ui(self):
         """初始化界面"""
+        from PyQt5.QtWidgets import QTabWidget
+
         layout = QVBoxLayout(self)
         layout.setSpacing(12)
         layout.setContentsMargins(15, 15, 15, 15)
 
         # 标题
-        title = QLabel("FORM 2 - 稳性计算结果")
+        title = QLabel("FORM 2 - 稳性与强度计算结果")
         title.setFont(QFont("Arial", 18, QFont.Bold))
         title.setAlignment(Qt.AlignCenter)
         title.setStyleSheet("QLabel { color: #1976D2; padding: 10px; }")
         layout.addWidget(title)
 
+        # 创建子标签页
+        self.sub_tabs = QTabWidget()
+        layout.addWidget(self.sub_tabs)
+
+        # 稳性计算标签页
+        stability_widget = QWidget()
+        stability_layout = QVBoxLayout(stability_widget)
+        stability_layout.setSpacing(12)
+        stability_layout.setContentsMargins(10, 10, 10, 10)
+
         # 浮态参数
         floating_group = self.create_floating_group()
-        layout.addWidget(floating_group)
+        stability_layout.addWidget(floating_group)
 
         # 稳性参数
         stability_group = self.create_stability_group()
-        layout.addWidget(stability_group)
+        stability_layout.addWidget(stability_group)
 
         # GZ曲线表格和图表
         hz_layout = QHBoxLayout()
@@ -59,11 +71,17 @@ class Form2Widget(QWidget):
         gz_plot_group = self.create_gz_plot_group()
         hz_layout.addWidget(gz_plot_group, 2)
 
-        layout.addLayout(hz_layout, 1)
+        stability_layout.addLayout(hz_layout, 1)
 
         # 稳性衡准
         criteria_group = self.create_criteria_group()
-        layout.addWidget(criteria_group)
+        stability_layout.addWidget(criteria_group)
+
+        self.sub_tabs.addTab(stability_widget, "稳性计算")
+
+        # 强度计算标签页
+        strength_widget = self.create_strength_widget()
+        self.sub_tabs.addTab(strength_widget, "强度计算")
         
     def create_floating_group(self):
         """创建浮态参数组"""
@@ -272,6 +290,24 @@ class Form2Widget(QWidget):
             criteria = self.calculator.check_stability_criteria(gz_curve, gmf)
             print(f"稳性衡准: {len(criteria)} 项")
 
+            # 计算强度
+            print("正在计算强度...")
+            print(f"  装载数据项数: {len(loading_data.get('items', []))}")
+            print(f"  吃水: {draught:.2f} m")
+            try:
+                strength = self.calculator.calculate_strength(loading_data, draught, trim=0.0)
+                if strength:
+                    print(f"✓ 强度计算完成:")
+                    print(f"  最大剪力: {strength.get('max_shear_force', 0):.2f} kN")
+                    print(f"  数据点数: {len(strength.get('stations', []))}")
+                else:
+                    print("✗ 强度计算返回None")
+            except Exception as e:
+                print(f"✗ 强度计算错误: {e}")
+                import traceback
+                traceback.print_exc()
+                strength = None
+
             # 保存结果
             self.results = {
                 'displacement': displacement,
@@ -290,6 +326,7 @@ class Form2Widget(QWidget):
                 'kgf': kgf,
                 'gz_curve': gz_curve,
                 'criteria': criteria,
+                'strength': strength,
             }
 
             print("结果已保存")
@@ -338,6 +375,9 @@ class Form2Widget(QWidget):
 
         # 更新稳性衡准表格
         self.update_criteria_table()
+
+        # 更新强度计算显示
+        self.update_strength_display()
 
     def update_gz_table(self):
         """更新GZ表格"""
@@ -453,4 +493,191 @@ class Form2Widget(QWidget):
     def get_results(self):
         """获取计算结果"""
         return self.results
+
+    def create_strength_widget(self):
+        """创建强度计算部件"""
+        widget = QWidget()
+        layout = QVBoxLayout(widget)
+        layout.setSpacing(12)
+        layout.setContentsMargins(10, 10, 10, 10)
+
+        # 强度参数表格
+        params_group = QGroupBox("强度参数 (Strength Parameters)")
+        params_group.setFont(QFont("Arial", 10, QFont.Bold))
+        params_layout = QVBoxLayout()
+        params_layout.setContentsMargins(20, 20, 20, 20)
+
+        self.strength_table = QTableWidget()
+        self.strength_table.setColumnCount(2)
+        self.strength_table.setHorizontalHeaderLabels(["参数", "数值"])
+        self.strength_table.horizontalHeader().setStretchLastSection(True)
+        self.strength_table.setAlternatingRowColors(True)
+        params_layout.addWidget(self.strength_table)
+        params_group.setLayout(params_layout)
+        layout.addWidget(params_group)
+
+        # 强度曲线图 - 综合显示
+        curves_group = QGroupBox("船舶强度曲线 (Ship Strength Curves)")
+        curves_group.setFont(QFont("Arial", 10, QFont.Bold))
+        curves_layout = QVBoxLayout()
+        curves_layout.setContentsMargins(10, 10, 10, 10)
+
+        # 创建一个大的图形，包含4个子图
+        self.strength_figure = Figure(figsize=(14, 10))
+        self.strength_canvas = FigureCanvas(self.strength_figure)
+        curves_layout.addWidget(self.strength_canvas)
+        curves_group.setLayout(curves_layout)
+
+        layout.addWidget(curves_group, 1)
+
+        return widget
+
+    def update_strength_display(self):
+        """更新强度计算显示"""
+        if not self.results:
+            print("update_strength_display: 没有计算结果")
+            return
+
+        if 'strength' not in self.results:
+            print("update_strength_display: 结果中没有强度数据")
+            return
+
+        strength = self.results['strength']
+
+        if strength is None:
+            print("update_strength_display: 强度数据为None")
+            return
+
+        print(f"update_strength_display: 开始更新强度显示，数据点数={len(strength.get('stations', []))}")
+
+        # 更新强度参数表格
+        params = [
+            ("最大剪力 (Max Shear Force)",
+             f"{strength['max_shear_force']:.2f} kN @ Frame {self._position_to_frame(strength['position_max_shear']):.0f}"),
+            ("最大中拱弯矩 (Max Sagging Moment)",
+             f"{strength['max_sagging_moment']/1000:.2f} MN·m @ Frame {self._position_to_frame(strength['position_max_sagging']):.0f}"),
+            ("最大中垂弯矩 (Max Hogging Moment)",
+             f"{strength['max_hogging_moment']/1000:.2f} MN·m @ Frame {self._position_to_frame(strength['position_max_hogging']):.0f}"),
+            ("", ""),
+            ("许用剪力 (Allowable Shear Force)", f"{strength['allowable_shear_force']:.2f} kN"),
+            ("许用中拱弯矩 (Allowable Sagging)", f"{strength['allowable_sagging_moment']/1000:.2f} MN·m"),
+            ("许用中垂弯矩 (Allowable Hogging)", f"{strength['allowable_hogging_moment']/1000:.2f} MN·m"),
+            ("", ""),
+            ("剪力检查 (Shear Force Check)", "✓ 通过" if strength['shear_force_ok'] else "✗ 不通过"),
+            ("中拱弯矩检查 (Sagging Check)", "✓ 通过" if strength['sagging_moment_ok'] else "✗ 不通过"),
+            ("中垂弯矩检查 (Hogging Check)", "✓ 通过" if strength['hogging_moment_ok'] else "✗ 不通过"),
+            ("", ""),
+            ("边界条件 (Boundary Conditions)", ""),
+            ("V(0)", f"{strength['boundary_check']['V(0)']:.6f} t"),
+            ("V(L)", f"{strength['boundary_check']['V(L)']:.6f} t"),
+            ("M(0)", f"{strength['boundary_check']['M(0)']:.6f} t·m"),
+            ("M(L)", f"{strength['boundary_check']['M(L)']:.6f} t·m"),
+        ]
+
+        self.strength_table.setRowCount(len(params))
+        for i, (param, value) in enumerate(params):
+            param_item = QTableWidgetItem(param)
+            value_item = QTableWidgetItem(value)
+
+            # 加粗特定行
+            if "边界条件" in param or "检查" in param:
+                font = QFont("Arial", 9, QFont.Bold)
+                param_item.setFont(font)
+                value_item.setFont(font)
+
+            # 设置颜色
+            if "✓ 通过" in value:
+                value_item.setForeground(QColor(0, 128, 0))
+            elif "✗ 不通过" in value:
+                value_item.setForeground(QColor(255, 0, 0))
+
+            self.strength_table.setItem(i, 0, param_item)
+            self.strength_table.setItem(i, 1, value_item)
+
+        # 更新综合强度曲线图
+        self.update_strength_plots(strength)
+
+    def _position_to_frame(self, position):
+        """将位置转换为肋骨号"""
+        # Frame 0 在 -4.24m, 间距 0.8m
+        return (position + 4.24) / 0.8
+
+    def update_strength_plots(self, strength):
+        """更新综合强度曲线图 - 在一张图中显示重力、浮力、剪力、弯矩"""
+        self.strength_figure.clear()
+
+        # 转换位置为Frame号
+        frames = [(pos + 4.24) / 0.8 for pos in strength['stations']]
+
+        # 创建2x2子图布局
+        # 子图1: 重力分布
+        ax1 = self.strength_figure.add_subplot(2, 2, 1)
+        weight_density = strength['weight_density']  # t/m
+        ax1.plot(frames, weight_density, 'r-', linewidth=1.5, label='Weight Density')
+        ax1.axhline(y=0, color='k', linestyle='-', linewidth=0.5)
+        ax1.set_xlabel('Frame Number', fontsize=9)
+        ax1.set_ylabel('Weight Density (t/m)', fontsize=9)
+        ax1.set_title('Weight Distribution', fontsize=10, fontweight='bold')
+        ax1.grid(True, alpha=0.3)
+        ax1.legend(fontsize=8)
+
+        # 子图2: 浮力分布
+        ax2 = self.strength_figure.add_subplot(2, 2, 2)
+        buoyancy_density = strength['buoyancy_density']  # t/m
+        ax2.plot(frames, buoyancy_density, 'b-', linewidth=1.5, label='Buoyancy Density')
+        ax2.axhline(y=0, color='k', linestyle='-', linewidth=0.5)
+        ax2.set_xlabel('Frame Number', fontsize=9)
+        ax2.set_ylabel('Buoyancy Density (t/m)', fontsize=9)
+        ax2.set_title('Buoyancy Distribution', fontsize=10, fontweight='bold')
+        ax2.grid(True, alpha=0.3)
+        ax2.legend(fontsize=8)
+
+        # 子图3: 剪力曲线
+        ax3 = self.strength_figure.add_subplot(2, 2, 3)
+        shear_force = strength['shear_force']  # kN
+        ax3.plot(frames, shear_force, 'g-', linewidth=1.5, label='Shear Force')
+        ax3.axhline(y=0, color='k', linestyle='-', linewidth=0.5)
+
+        # 绘制许用值线
+        if strength['allowable_shear_force'] > 0:
+            ax3.axhline(y=strength['allowable_shear_force'], color='r', linestyle='--',
+                       linewidth=1, label=f'Allowable: ±{strength["allowable_shear_force"]:.0f} kN')
+            ax3.axhline(y=-strength['allowable_shear_force'], color='r', linestyle='--', linewidth=1)
+
+        # 标注最大值
+        max_idx = np.argmax(np.abs(shear_force))
+        ax3.plot(frames[max_idx], shear_force[max_idx], 'ro', markersize=6)
+
+        ax3.set_xlabel('Frame Number', fontsize=9)
+        ax3.set_ylabel('Shear Force (kN)', fontsize=9)
+        ax3.set_title('Shear Force Curve', fontsize=10, fontweight='bold')
+        ax3.grid(True, alpha=0.3)
+        ax3.legend(fontsize=8)
+
+        # 子图4: 弯矩曲线
+        ax4 = self.strength_figure.add_subplot(2, 2, 4)
+        bending_moment = [bm / 1000 for bm in strength['bending_moment']]  # 转换为MN·m
+        ax4.plot(frames, bending_moment, 'm-', linewidth=1.5, label='Bending Moment')
+        ax4.axhline(y=0, color='k', linestyle='-', linewidth=0.5)
+
+        # 绘制许用值线
+        if strength['allowable_sagging_moment'] > 0:
+            ax4.axhline(y=strength['allowable_sagging_moment']/1000, color='r', linestyle='--',
+                       linewidth=1, label=f'Allow. Sag: {strength["allowable_sagging_moment"]/1000:.0f} MN·m')
+        if strength['allowable_hogging_moment'] > 0:
+            ax4.axhline(y=-strength['allowable_hogging_moment']/1000, color='r', linestyle='--',
+                       linewidth=1, label=f'Allow. Hog: {strength["allowable_hogging_moment"]/1000:.0f} MN·m')
+
+        # 标注最大值
+        max_idx = np.argmax(np.abs(bending_moment))
+        ax4.plot(frames[max_idx], bending_moment[max_idx], 'ro', markersize=6)
+
+        ax4.set_xlabel('Frame Number', fontsize=9)
+        ax4.set_ylabel('Bending Moment (MN·m)', fontsize=9)
+        ax4.set_title('Bending Moment Curve', fontsize=10, fontweight='bold')
+        ax4.grid(True, alpha=0.3)
+        ax4.legend(fontsize=8)
+
+        self.strength_figure.tight_layout(pad=2.0)
+        self.strength_canvas.draw()
 

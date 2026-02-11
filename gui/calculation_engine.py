@@ -278,3 +278,51 @@ class StabilityCalculator:
 
         return area
 
+    def calculate_strength(self, loading_data, draught, trim=0.0):
+        """
+        计算船舶强度
+
+        Args:
+            loading_data: 装载数据
+            draught: 吃水 (m)
+            trim: 纵倾 (m)
+
+        Returns:
+            dict: 强度计算结果
+        """
+        from src.core.strength import StrengthCalculator
+        from src.core.loading_condition import WeightItem
+
+        # 创建强度计算器
+        strength_calc = StrengthCalculator(condition='TRANSIT')
+
+        # 准备重量项列表
+        weight_items = []
+
+        # 添加舱室装载
+        items = loading_data.get('items', [])
+        for item in items:
+            if item.get('weight', 0) > 0:
+                weight_item = WeightItem(
+                    name=item.get('tank_id', ''),
+                    weight=item['weight'],
+                    lcg=item['lcg'],
+                    vcg=item['vcg'],
+                    tcg=item.get('tcg', 0),
+                    fsm=item.get('fsm', 0)
+                )
+                weight_items.append(weight_item)
+
+        # 计算总排水量
+        displacement = loading_data.get('displacement', 0)
+
+        # 执行强度计算
+        strength_results = strength_calc.calculate_shear_force_and_bending_moment(
+            weight_items,
+            draught,
+            displacement,
+            trim=trim
+        )
+
+        return strength_results
+

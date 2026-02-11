@@ -11,20 +11,21 @@ SHIP_PARTICULARS = {
     'ship_number': 'B3598.1174.102',
     
     # 主尺度 (Main Dimensions)
-    'loa': 178.0,           # 总长 Length Overall (m)
-    'lpp': 168.0,           # 垂线间长 Length Between Perpendiculars (m)
+    'loa': 216.70,          # 总长 Length Overall (m)
+    'lpp': 212.13,          # 垂线间长 Length Between Perpendiculars (m)
     'breadth': 40.0,        # 型宽 Breadth Moulded (m)
     'depth': 12.5,          # 型深 Depth Moulded (m)
-    
+
     # 吃水限制 (Draught Limits) - Section 3.2.1
     'max_draught_transit': 7.5,        # 航行工况最大吃水 (m)
     'max_draught_submerged': 25.0,     # 半潜工况最大吃水 (m)
     'min_draught_transit': 4.0,        # 航行工况最小吃水 (m)
-    
-    # 基准点 (Reference Points)
-    'ap_position': 0.0,     # 艉垂线位置 Aft Perpendicular (m from AP)
-    'fp_position': 168.0,   # 首垂线位置 Forward Perpendicular (m from AP)
-    'midship': 84.0,        # 舷中位置 Midship (m from AP)
+
+    # 基准点 (Reference Points) - 从Frame 0开始测量
+    'frame_0_position': 0.0,    # Frame 0位置（坐标原点）
+    'ap_position': 4.24,        # 艉垂线位置 Aft Perpendicular (m from Frame 0)
+    'fp_position': 216.37,      # 首垂线位置 Forward Perpendicular (m from Frame 0)
+    'midship': 110.305,         # 舷中位置 Midship (m from Frame 0) = (AP+FP)/2
     
     # 设计参数 (Design Parameters) - 来自装载手册 Section 5.5
     'lightship': 20871.4,    # 空船重量 Lightship Weight (t)
